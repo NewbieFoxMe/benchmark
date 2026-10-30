@@ -41,6 +41,6 @@ python3 -m http.server 8000 -d public
 
 ## Cloudflare Pages
 
-连接 GitHub 仓库 `NewbieFoxMe/benchmark`，生产分支选 `main`，构建命令留空，输出目录填 `public`。随后在 Pages 项目的「自定义域」中添加 `benchmark.dev-supranett.space`。
+在 Cloudflare「Workers & Pages」中选择「Connect to Git」，授权 `NewbieFoxMe/benchmark`，生产分支选 `main`，构建命令留空，输出目录填 `public`。随后在 Pages 项目的「自定义域」中添加 `benchmark.dev-supranett.space`。提交到 `main` 后，Pages 自动部署。
 
 指标范围参考 [Artificial Analysis 模型比较](https://artificialanalysis.ai/zh/models)；本站为独立项目。
