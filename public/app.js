@@ -1,6 +1,6 @@
-import { METRICS, isValidResult, metricValue, sortAndFilter } from './benchmark.js';
+import { METRICS, isValidDataset, metricValue, sortAndFilter } from './benchmark.js';
 
-const state = { metric: 'quality', results: [], publishedAt: null, query: '', sort: 'best' };
+const state = { metric: 'throughput', results: [], workloads: [], workloadId: null, concurrency: null, query: '', sort: 'best' };
 const elements = {
   tabs: [...document.querySelectorAll('[data-metric]')],
   panel: document.querySelector('#board-content'),
@@ -9,7 +9,10 @@ const elements = {
   resultsBody: document.querySelector('#results-body'),
   emptyState: document.querySelector('#empty-state'),
   search: document.querySelector('#search'),
+  workload: document.querySelector('#workload'),
+  concurrency: document.querySelector('#concurrency'),
   sort: document.querySelector('#sort'),
+  caption: document.querySelector('#workload-caption'),
 };
 
 function setMetric(metric) {
@@ -38,42 +41,52 @@ function cell(text, className = '') {
 }
 
 function renderRows() {
-  const matches = sortAndFilter(state.results, state.metric, state.query, state.sort);
+  const matches = sortAndFilter(state.results, state.metric, state);
   elements.resultsBody.replaceChildren();
   for (const result of matches) {
     const tr = document.createElement('tr');
     const name = cell('', 'model-cell');
     const strong = document.createElement('strong');
-    strong.textContent = result.model;
-    const provider = document.createElement('span');
-    provider.textContent = result.provider;
-    name.append(strong, provider);
+    strong.textContent = `${result.engine} · ${result.release}`;
+    const engine = document.createElement('span');
+    engine.textContent = result.model;
+    name.append(strong, engine);
     const value = metricValue(result, state.metric);
     const metricCell = cell(value == null ? '—' : METRICS[state.metric].format(value), 'value-cell');
+    const concurrency = cell(`C${result.concurrency}`);
     const date = cell(new Intl.DateTimeFormat('zh-CN', { dateStyle: 'medium' }).format(new Date(result.measuredAt)));
     const source = cell('');
-    const url = state.metric === 'price' ? result.pricing?.sourceUrl : result.runUrl;
-    if (typeof url === 'string' && url.startsWith('https://')) {
-      const link = document.createElement('a');
-      link.href = url;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.textContent = '查看 ↗';
-      source.append(link);
-    } else {
-      source.textContent = '—';
-    }
-    tr.append(name, metricCell, date, source);
+    const link = document.createElement('a');
+    link.href = result.sourceUrl;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = '查看 ↗';
+    source.append(link);
+    tr.append(name, metricCell, concurrency, date, source);
     elements.resultsBody.append(tr);
   }
   const hasData = state.results.length > 0;
   elements.controls.hidden = !hasData;
+  elements.caption.hidden = !hasData;
   elements.resultsWrap.hidden = !hasData || matches.length === 0;
   elements.emptyState.hidden = hasData && matches.length > 0;
+  elements.emptyState.querySelector('a').hidden = hasData;
+  document.querySelector('#result-count').textContent = hasData ? `${matches.length} / ${state.results.length} 条结果` : '0 条结果';
   if (hasData && matches.length === 0) {
-    elements.emptyState.querySelector('h4').textContent = '没有匹配的模型';
-    elements.emptyState.querySelector('p').textContent = '试试其他模型名称或提供商。';
+    elements.emptyState.querySelector('h4').textContent = '当前条件没有结果';
+    elements.emptyState.querySelector('p').textContent = '换个模型名称、工作负载或并发度试试。';
   }
+}
+
+function setWorkload(workloadId) {
+  state.workloadId = workloadId;
+  const levels = [...new Set(state.results.filter((row) => row.workloadId === workloadId).map((row) => row.concurrency))].sort((a, b) => a - b);
+  elements.concurrency.replaceChildren(...levels.map((level) => new Option(`C${level}`, String(level))));
+  state.concurrency = levels.includes(32) ? 32 : levels[0];
+  elements.concurrency.value = String(state.concurrency);
+  const workload = state.workloads.find((item) => item.id === workloadId);
+  elements.caption.textContent = `${workload.label} · 输入 ${workload.inputTokens.toLocaleString('zh-CN')} token / 输出 ${workload.outputTokens.toLocaleString('zh-CN')} token · ${workload.hardware}`;
+  renderRows();
 }
 
 elements.tabs.forEach((tab, index) => {
@@ -89,20 +102,30 @@ elements.tabs.forEach((tab, index) => {
 });
 elements.search.addEventListener('input', (event) => { state.query = event.target.value; renderRows(); });
 elements.sort.addEventListener('change', (event) => { state.sort = event.target.value; renderRows(); });
+elements.workload.addEventListener('change', (event) => { setWorkload(event.target.value); });
+elements.concurrency.addEventListener('change', (event) => { state.concurrency = Number(event.target.value); renderRows(); });
 
 try {
   const response = await fetch('/data/results.json', { cache: 'no-store' });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const payload = await response.json();
-  if (!Array.isArray(payload.results) || !payload.results.every(isValidResult)
-    || (payload.publishedAt != null && !Number.isFinite(Date.parse(payload.publishedAt)))) throw new Error('Invalid results');
-  state.results = payload.results;
-  state.publishedAt = payload.publishedAt;
-  const count = state.results.length;
-  document.querySelector('#hero-count').textContent = String(count).padStart(2, '0');
-  document.querySelector('#result-count').textContent = `${count} 条结果`;
-  if (state.publishedAt) document.querySelector('#published-at').textContent = `数据更新 · ${new Intl.DateTimeFormat('zh-CN', { dateStyle: 'medium' }).format(new Date(state.publishedAt))}`;
-  setMetric('quality');
+  const workloads = payload.workloads;
+  const results = payload.results;
+  if (!isValidDataset(payload)) throw new Error('Invalid results');
+  state.results = results;
+  state.workloads = workloads;
+  document.querySelector('#hero-count').textContent = String(results.length).padStart(2, '0');
+  if (results.length > 0) {
+    document.querySelector('#hero-status').textContent = '实测结果已发布.';
+    document.querySelector('#hero-description').textContent = '按工作负载与并发度筛选，比较推理服务表现。';
+  }
+  if (payload.publishedAt) document.querySelector('#published-at').textContent = `数据更新 · ${new Intl.DateTimeFormat('zh-CN', { dateStyle: 'medium' }).format(new Date(payload.publishedAt))}`;
+  if (results.length > 0) {
+    const activeWorkloads = workloads.filter((workload) => results.some((row) => row.workloadId === workload.id));
+    elements.workload.replaceChildren(...activeWorkloads.map((workload) => new Option(workload.label, workload.id)));
+    setWorkload(activeWorkloads[0].id);
+  }
+  setMetric('throughput');
 } catch {
   document.querySelector('#published-at').textContent = '数据状态 · 加载失败';
   document.querySelector('#empty-state h4').textContent = '数据暂时无法加载';

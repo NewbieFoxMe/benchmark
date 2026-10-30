@@ -1,35 +1,35 @@
 export const METRICS = {
-  quality: {
-    title: '综合质量',
-    description: '固定题集上的综合得分。具体题集、配置与计分方式随结果公开。',
-    direction: '↑ 越高越好',
-    field: 'qualityScore',
-    ascending: false,
-    format: (value) => `${formatNumber(value, 1)} 分`,
-  },
-  speed: {
-    title: '输出速度',
-    description: '开始输出后每秒生成的 token 数，按统一采样配置测量。',
+  throughput: {
+    title: '总吞吐',
+    description: '整个测量批次每秒完成的输出 token 数。相同负载与并发度下比较。',
     direction: '↑ 越高越好',
     field: 'outputTps',
     ascending: false,
-    format: (value) => `${formatNumber(value, 0)} token/s`,
+    format: (value) => `${formatNumber(value, 1)} token/s`,
   },
-  latency: {
-    title: '首字延迟',
-    description: '从请求发出到收到首个输出 token 的时间。',
+  ttft: {
+    title: '首 Token 延迟',
+    description: '客户端从发出请求到收到首个非空输出的平均时间。',
     direction: '↓ 越低越好',
     field: 'ttftSeconds',
     ascending: true,
     format: (value) => `${formatNumber(value, 2)} s`,
   },
-  price: {
-    title: '输出价格',
-    description: '提供商公布的每百万输出 token 美元价格。',
+  decode: {
+    title: '单请求解码速度',
+    description: '逐请求计算首 Token 后的输出速率，再按请求聚合。',
+    direction: '↑ 越高越好',
+    field: 'requestDecodeTps',
+    ascending: false,
+    format: (value) => `${formatNumber(value, 1)} token/s`,
+  },
+  e2e: {
+    title: '端到端时间',
+    description: '客户端从发出请求到收到完整输出的平均耗时。',
     direction: '↓ 越低越好',
-    field: 'outputUsdPerMillion',
+    field: 'e2eSeconds',
     ascending: true,
-    format: (value) => `$${formatNumber(value, 2)} / 1M`,
+    format: (value) => `${formatNumber(value, 2)} s`,
   },
 };
 
@@ -41,37 +41,65 @@ function formatNumber(value, digits) {
 }
 
 export function metricValue(result, metric) {
-  return metric === 'price' ? result.pricing?.outputUsdPerMillion : result.metrics?.[METRICS[metric].field];
+  return result.metrics?.[METRICS[metric].field];
 }
 
-export function sortAndFilter(results, metric, query = '', sort = 'best') {
+export function sortAndFilter(results, metric, { query = '', workloadId = null, concurrency = null, sort = 'best' } = {}) {
   const needle = query.trim().toLocaleLowerCase();
-  return results.filter((result) => `${result.model} ${result.provider}`.toLocaleLowerCase().includes(needle))
-    .sort((a, b) => {
-      if (sort === 'name') return a.model.localeCompare(b.model, 'zh-CN');
-      const aValue = metricValue(a, metric);
-      const bValue = metricValue(b, metric);
-      if (aValue == null) return bValue == null ? a.model.localeCompare(b.model, 'zh-CN') : 1;
-      if (bValue == null) return -1;
-      return (aValue - bValue) * (METRICS[metric].ascending ? 1 : -1) || a.model.localeCompare(b.model, 'zh-CN');
-    });
+  return results.filter((result) => (
+    (workloadId == null || result.workloadId === workloadId)
+    && (concurrency == null || result.concurrency === concurrency)
+    && `${result.model} ${result.engine} ${result.release}`.toLocaleLowerCase().includes(needle)
+  )).sort((a, b) => {
+    if (sort === 'name') return rowName(a).localeCompare(rowName(b), 'zh-CN');
+    const aValue = metricValue(a, metric);
+    const bValue = metricValue(b, metric);
+    if (aValue == null) return bValue == null ? rowName(a).localeCompare(rowName(b), 'zh-CN') : 1;
+    if (bValue == null) return -1;
+    return (aValue - bValue) * (METRICS[metric].ascending ? 1 : -1) || rowName(a).localeCompare(rowName(b), 'zh-CN');
+  });
+}
+
+function rowName(result) {
+  return `${result.engine} ${result.release} ${result.model}`;
+}
+
+function isHttpsUrl(value) {
+  try { return new URL(value).protocol === 'https:'; } catch { return false; }
+}
+
+export function isValidWorkload(workload) {
+  return typeof workload?.id === 'string' && workload.id.trim() !== ''
+    && typeof workload.label === 'string' && workload.label.trim() !== ''
+    && typeof workload.hardware === 'string' && workload.hardware.trim() !== ''
+    && Number.isInteger(workload.inputTokens) && workload.inputTokens > 0
+    && Number.isInteger(workload.outputTokens) && workload.outputTokens > 0;
 }
 
 export function isValidResult(result) {
   const metrics = result?.metrics;
-  const pricing = result?.pricing;
-  const validNumber = (value) => value == null || (typeof value === 'number' && Number.isFinite(value));
-  const validUrl = (value) => {
-    try { return new URL(value).protocol === 'https:'; } catch { return false; }
-  };
-  return typeof result?.model === 'string' && result.model.trim() !== ''
-    && typeof result.provider === 'string' && result.provider.trim() !== ''
+  return typeof result?.workloadId === 'string' && result.workloadId.trim() !== ''
+    && typeof result.model === 'string' && result.model.trim() !== ''
+    && typeof result.engine === 'string' && result.engine.trim() !== ''
+    && typeof result.release === 'string' && result.release.trim() !== ''
+    && Number.isInteger(result.concurrency) && result.concurrency > 0
     && typeof result.measuredAt === 'string' && Number.isFinite(Date.parse(result.measuredAt))
-    && validUrl(result.runUrl)
-    && metrics && typeof metrics === 'object'
-    && ['qualityScore', 'outputTps', 'ttftSeconds'].every((key) => validNumber(metrics[key]))
-    && (metrics.outputTps == null || metrics.outputTps >= 0)
-    && (metrics.ttftSeconds == null || metrics.ttftSeconds >= 0)
-    && (pricing == null || (validNumber(pricing.outputUsdPerMillion)
-      && (pricing.outputUsdPerMillion == null || (pricing.outputUsdPerMillion >= 0 && validUrl(pricing.sourceUrl)))));
+    && isHttpsUrl(result.sourceUrl)
+    && metrics && typeof metrics === 'object' && !Array.isArray(metrics)
+    && Object.values(METRICS).every(({ field }) => metrics[field] == null
+      || (typeof metrics[field] === 'number' && Number.isFinite(metrics[field]) && metrics[field] >= 0))
+    && Object.values(METRICS).some(({ field }) => metrics[field] != null);
+}
+
+export function isValidDataset(payload) {
+  const workloads = payload?.workloads;
+  const results = payload?.results;
+  if (!Array.isArray(workloads) || !Array.isArray(results)) return false;
+  const ids = workloads.map((workload) => workload.id);
+  return workloads.every(isValidWorkload) && new Set(ids).size === ids.length
+    && results.every(isValidResult)
+    && results.every((result) => ids.includes(result.workloadId))
+    && (results.length === 0 || payload.publishedAt != null)
+    && (payload.publishedAt == null || (typeof payload.publishedAt === 'string'
+      && Number.isFinite(Date.parse(payload.publishedAt))));
 }

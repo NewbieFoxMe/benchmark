@@ -87,6 +87,7 @@ a { color: inherit; }
 .metric-intro p { max-width: 490px; margin: 0; color: #68776d; font-size: 13px; line-height: 1.75; }
 .direction { margin-left: auto; flex: none; border: 1px solid #dce8d3; border-radius: 4px; background: #f2f8ec; padding: 8px 10px; color: #4f772f; font-size: 11px; font-weight: 750; }
 .board-controls { display: flex; justify-content: space-between; gap: 16px; padding: 18px 28px; }
+.workload-caption { margin: 0; padding: 0 28px 16px; color: #66776a; font-size: 11px; }
 .search-field { position: relative; flex: 1; max-width: 390px; }
 .search-field input, .sort-field select { min-height: 39px; border: 1px solid #dce3d9; border-radius: 4px; background: #fff; color: #253329; }
 .search-field input { width: 100%; padding: 0 12px 0 34px; font-size: 12px; }
@@ -177,6 +178,9 @@ a { color: inherit; }
   .empty-state { flex-direction: column; align-items: flex-start; gap: 21px; padding: 40px 23px; }
   .empty-symbol { width: 72px; height: 72px; gap: 5px; }
   .board-footer { padding-inline: 19px; }
+  .board-controls { flex-wrap: wrap; padding-inline: 19px; }
+  .search-field { max-width: none; flex-basis: 100%; }
+  .workload-caption { padding-inline: 19px; line-height: 1.6; }
   .metric-cards { gap: 9px; }
   .metric-card { min-height: 260px; padding: 19px; }
   .method-note { flex-wrap: wrap; padding: 21px; }
