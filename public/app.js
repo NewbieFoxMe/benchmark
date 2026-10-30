@@ -115,6 +115,13 @@ function renderRows() {
 }
 
 function renderSummary() {
+  const measuredModels = [...new Set(state.results.map((row) => row.model))];
+  document.querySelector("#summary-model-count").textContent =
+    `${measuredModels.length} 模型`;
+  document.querySelector("#summary-model-name").textContent =
+    measuredModels.join(" / ");
+  document.querySelector("#summary-model-context").textContent =
+    `${new Set(state.results.map((row) => row.engine)).size} 引擎 · ${new Set(state.results.map((row) => row.concurrency)).size} 档并发 · ${state.results.length} 条结果`;
   const rows = state.results.filter(
     (row) => row.workloadId === state.workloadId,
   );
@@ -168,7 +175,14 @@ function setWorkload(workloadId) {
   state.concurrency = levels.includes(32) ? 32 : levels[0];
   elements.concurrency.value = String(state.concurrency);
   const workload = state.workloads.find((item) => item.id === workloadId);
-  elements.caption.textContent = `${workload.label} · 输入 ${workload.inputTokens.toLocaleString("zh-CN")} token / 输出上限 ${workload.outputTokens.toLocaleString("zh-CN")} token · ${workload.hardware}`;
+  const measuredModels = [
+    ...new Set(
+      state.results
+        .filter((row) => row.workloadId === workloadId)
+        .map((row) => row.model),
+    ),
+  ];
+  elements.caption.textContent = `${measuredModels.join(" / ")} · ${workload.label} · 输入 ${workload.inputTokens.toLocaleString("zh-CN")} token / 输出上限 ${workload.outputTokens.toLocaleString("zh-CN")} token · ${workload.hardware}`;
   renderSummary();
   charts?.renderOverview(state.results, workloadId);
   renderRows();
@@ -218,8 +232,12 @@ try {
   if (!isValidDataset(payload)) throw new Error("Invalid results");
   state.results = results;
   state.workloads = workloads;
-  document.querySelector('#published-count').textContent = `${results.length} 条服务实测结果`;
+  document.querySelector("#published-count").textContent =
+    `${results.length} 条服务实测结果`;
   if (results.length === 0) {
+    document.querySelector("#summary-model-count").textContent = "0 模型";
+    document.querySelector("#summary-model-name").textContent =
+      "暂无已发布实测";
     document.querySelector("#empty-state .empty-label").textContent =
       "DATASET / EMPTY";
     document.querySelector("#empty-state h4").textContent = "暂无已发布结果";
@@ -241,6 +259,7 @@ try {
   }
   setMetric("throughput");
 } catch {
+  document.querySelector("#summary-model-name").textContent = "数据加载失败";
   document.querySelector("#summary-throughput-name").textContent =
     "数据加载失败";
   document.querySelector("#summary-ttft-name").textContent = "数据加载失败";

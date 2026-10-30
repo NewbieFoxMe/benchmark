@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f3f4f7" />
-    <meta name="description" content="Benchmark：比较公开模型偏好评分与自托管推理服务的吞吐、延迟和解码速度。" />
-    <title>模型比较：评分与推理性能 | Benchmark</title>
+    <meta name="description" content="Benchmark：比较开放权重模型的外部偏好评分与自部署实测，查看模型许可、推理吞吐、延迟与解码速度。" />
+    <title>开放权重模型比较与自部署评测 | Benchmark</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles.css" />
     <script src="/vendor/chart.umd.min.js"></script>
@@ -21,8 +21,8 @@
           <span>Benchmark</span>
         </a>
         <nav class="site-nav" aria-label="主导航">
-          <a href="#models">模型</a>
-          <a href="#leaderboard">服务性能</a>
+          <a href="#models">模型参考</a>
+          <a href="#leaderboard">自部署实测</a>
           <a href="#methodology">数据口径</a>
         </nav>
         <a class="source-link" href="https://github.com/NewbieFoxMe/benchmark" target="_blank" rel="noopener noreferrer">
@@ -37,36 +37,36 @@
         <div class="container">
           <div class="page-heading">
             <div>
-              <p class="eyebrow">AI MODEL & SERVING BENCHMARK</p>
-              <h1 id="page-title">模型比较：评分与推理性能</h1>
-              <p>查看公开模型偏好榜与自托管服务实测；两类指标按各自口径展示。</p>
+              <p class="eyebrow">OPEN-WEIGHT MODEL BENCHMARK</p>
+              <h1 id="page-title">开放权重模型比较与自部署评测</h1>
+              <p>从公开榜单筛选开放权重模型，用自有硬件实测推理性能。</p>
             </div>
-            <a href="#models">
-              浏览完整榜单
+            <a href="#leaderboard">
+              查看自部署实测
               <span aria-hidden="true">↗</span>
             </a>
           </div>
           <div class="summary-grid" aria-label="关键结果">
             <article class="summary-card">
-              <span class="summary-label">模型偏好榜首 · Arena</span>
+              <span class="summary-label">开放权重最高分 · Arena</span>
               <strong id="summary-arena-value">—</strong>
               <p id="summary-arena-name">读取数据中</p>
-              <span class="summary-note">文本榜 · 评分越高越好</span>
+              <span class="summary-note" id="summary-arena-context">外部文本偏好评分</span>
             </article>
             <article class="summary-card">
-              <span class="summary-label">非专有许可最高 · Arena</span>
-              <strong id="summary-other-value">—</strong>
-              <p id="summary-other-name">读取数据中</p>
-              <span class="summary-note">按数据集许可字段筛选</span>
+              <span class="summary-label">自部署实测覆盖</span>
+              <strong id="summary-model-count">—</strong>
+              <p id="summary-model-name">读取数据中</p>
+              <span class="summary-note" id="summary-model-context">已发布的模型与服务配置</span>
             </article>
             <article class="summary-card">
-              <span class="summary-label">服务总吞吐</span>
+              <span class="summary-label">实测最高总吞吐</span>
               <strong id="summary-throughput-value">—</strong>
               <p id="summary-throughput-name">读取数据中</p>
               <span class="summary-note" id="summary-throughput-context">同一负载与并发度</span>
             </article>
             <article class="summary-card">
-              <span class="summary-label">首 Token 延迟</span>
+              <span class="summary-label">实测首 Token 延迟</span>
               <strong id="summary-ttft-value">—</strong>
               <p id="summary-ttft-name">读取数据中</p>
               <span class="summary-note" id="summary-ttft-context">同一负载与并发度</span>
@@ -76,15 +76,15 @@
             <article class="preview-card">
               <div class="preview-head">
                 <span class="preview-icon preview-icon-model" aria-hidden="true"></span>
-                <h2>模型偏好</h2>
-                <span>Arena</span>
+                <h2>开放权重评分</h2>
+                <span>Arena · 外部参考</span>
               </div>
               <p>评分与置信区间 · 越高越好</p>
               <div class="preview-canvas">
-                <canvas id="arena-preview" role="img" aria-label="Arena 模型偏好评分概览"></canvas>
+                <canvas id="arena-preview" role="img" aria-label="Arena 开放权重模型偏好评分概览"></canvas>
               </div>
               <a href="#models">
-                查看模型榜单
+                查看开放权重参考
                 <span aria-hidden="true">↗</span>
               </a>
             </article>
@@ -125,8 +125,8 @@
       <div class="detail-layout container">
         <aside class="detail-nav" aria-label="页面导航">
           <strong>比较维度</strong>
-          <a href="#models">模型偏好</a>
-          <a href="#leaderboard">服务性能</a>
+          <a href="#models">开放权重参考</a>
+          <a href="#leaderboard">自部署实测</a>
           <a href="#methodology">数据与口径</a>
         </aside>
         <div class="detail-main">
@@ -134,14 +134,14 @@
             <div class="section-heading">
               <div>
                 <span class="section-index">01 / MODELS</span>
-                <h2 id="models-title">模型偏好</h2>
+                <h2 id="models-title">开放权重参考</h2>
               </div>
-              <p>Arena 匿名对比投票形成的文本榜评分，展示排名与统计区间。</p>
+              <p>默认展示开放权重模型的 Arena 文本偏好评分；自部署性能由下方实测提供。</p>
             </div>
             <div class="data-panel">
               <div class="panel-heading">
                 <div>
-                  <span class="panel-kicker">ARENA · TEXT STYLE CONTROL</span>
+                  <span class="panel-kicker">ARENA · 外部能力参考</span>
                   <h3>模型评分与置信区间</h3>
                 </div>
                 <span id="arena-published">读取数据中</span>
@@ -152,11 +152,11 @@
                   <input id="arena-search" type="search" placeholder="搜索模型或机构" autocomplete="off" />
                 </label>
                 <label class="select-field">
-                  许可
-                  <select id="arena-license">
-                    <option value="all">全部</option>
-                    <option value="proprietary">专有</option>
-                    <option value="other">其他许可</option>
+                  范围
+                  <select id="arena-access">
+                    <option value="open-weight" selected>开放权重</option>
+                    <option value="proprietary">闭源参照</option>
+                    <option value="all">全部条目</option>
                   </select>
                 </label>
                 <label class="select-field">
@@ -173,13 +173,17 @@
               <div id="arena-visual" hidden>
                 <div id="arena-plot">
                   <div class="arena-legend">
-                    <span>
-                      <i class="legend-proprietary" aria-hidden="true"></i>
-                      专有许可
+                    <span data-access="open-weight">
+                      <i class="legend-open" aria-hidden="true"></i>
+                      开放权重
                     </span>
-                    <span>
-                      <i class="legend-other" aria-hidden="true"></i>
-                      其他许可
+                    <span data-access="proprietary" hidden>
+                      <i class="legend-proprietary" aria-hidden="true"></i>
+                      闭源参照
+                    </span>
+                    <span data-access="unknown" hidden>
+                      <i class="legend-unknown" aria-hidden="true"></i>
+                      权重许可待确认
                     </span>
                     <span>圆点：评分 / 横条：95% 置信区间</span>
                   </div>
@@ -188,13 +192,13 @@
                       <canvas id="arena-chart" role="img" aria-label="Arena 文本偏好评分与置信区间图"></canvas>
                     </div>
                   </div>
-                  <p class="chart-note">图表显示当前筛选下排名靠前的 15 个模型；完整结果见表格。</p>
+                  <p class="chart-note">图表展示筛选后的前 15 条，排名沿用 Arena 总榜。具体使用条款与部署要求见模型许可。</p>
                 </div>
                 <div class="arena-table-wrap">
                   <table>
                     <thead>
                       <tr>
-                        <th scope="col">排名</th>
+                        <th scope="col">Arena 总榜</th>
                         <th scope="col">模型 / 机构</th>
                         <th scope="col">评分</th>
                         <th scope="col">95% 区间</th>
@@ -221,9 +225,9 @@
             <div class="section-heading">
               <div>
                 <span class="section-index">02 / SERVICES</span>
-                <h2 id="leaderboard-title">服务性能</h2>
+                <h2 id="leaderboard-title">自部署性能实测</h2>
               </div>
-              <p>同一模型、负载与并发度下比较服务配置；切换指标查看排名和趋势。</p>
+              <p>开放权重模型在自有硬件上的推理表现；同一模型、硬件与负载下比较服务配置。</p>
             </div>
             <div class="data-panel">
               <div class="metric-tabs" role="tablist" aria-label="比较维度">
@@ -320,17 +324,17 @@
                 <span class="section-index">03 / METHOD</span>
                 <h2 id="methodology-title">数据与口径</h2>
               </div>
-              <p>模型偏好与服务性能由不同数据源测量，按各自维度解读。</p>
+              <p>开放权重模型选型参考与自部署测量，分别保留来源和评测条件。</p>
             </div>
             <div class="method-grid">
               <article>
-                <h3>Arena 模型偏好</h3>
-                <p>匿名回答对比投票形成的文本评分及置信区间，采用文本风格控制榜的综合类别。</p>
+                <h3>开放权重与许可</h3>
+                <p>按 Arena 已识别的权重许可筛选，保留原始许可和总榜排名。开放权重包含社区及研究许可，使用范围与硬件适配以模型卡为准。</p>
                 <a href="https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/arena-text.md" target="_blank" rel="noopener noreferrer">数据说明 ↗</a>
               </article>
               <article>
-                <h3>服务性能实测</h3>
-                <p>相同模型、硬件和负载下，比较总吞吐、首 Token 延迟、逐请求解码速度与端到端时间。</p>
+                <h3>自部署测量</h3>
+                <p>已发布结果对应明确的模型版本、硬件、引擎与负载，比较总吞吐、首 Token 延迟、逐请求解码速度及端到端时间。</p>
                 <a href="https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md" target="_blank" rel="noopener noreferrer">配置与证据 ↗</a>
               </article>
             </div>
@@ -340,7 +344,7 @@
     </main>
     <footer class="site-footer">
       <div class="container footer-inner">
-        <span>Benchmark · 模型与推理服务基准数据</span>
+        <span>Benchmark · 开放权重模型与自部署推理评测</span>
         <a href="https://github.com/NewbieFoxMe/benchmark" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
       </div>
     </footer>

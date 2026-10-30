@@ -1,9 +1,9 @@
 # Benchmark
 
-AI 模型与推理服务基准数据站点。页面以概览指标和图表呈现两类独立数据：
+开放权重模型选型与自部署推理评测站点。页面以概览指标和图表呈现两类独立数据：
 
-- [Arena 文本偏好榜](docs/datasets/arena-text.md)：419 个模型的人类偏好评分、置信区间与投票数。
-- [2026-10-24 双机并发评测](docs/datasets/2026-10-24-concurrency256.md)：三套容量 256 的服务配置、七档并发，共 21 条结果，按吞吐、延迟与解码速度切换图表。
+- [Arena 文本偏好榜](docs/datasets/arena-text.md)：默认展示开放权重条目的评分、置信区间、许可与投票数，支持切换闭源参照和全部条目。
+- [2026-10-24 双机并发评测](docs/datasets/2026-10-24-concurrency256.md)：DeepSeek-V4.1-Flash-1017 的三套容量 256 服务配置、七档并发，共 21 条结果，按吞吐、延迟与解码速度切换图表。
 
 ## 本地预览
 
@@ -13,7 +13,7 @@ python3 -m http.server 8000 -d public
 
 打开 `http://localhost:8000`。运行 `npm test` 验证数据筛选、排序与校验逻辑。
 
-`public/index.html` 是页面入口；`arena.js` 与 `app.js` 分别处理模型榜单和服务评测，`charts.js` 负责服务图表。
+`public/index.html` 是页面入口；`arena-data.js` 负责许可分类与筛选，`arena.js` 与 `app.js` 分别处理模型参考和自部署评测，`charts.js` 负责服务图表。
 
 ## 数据
 

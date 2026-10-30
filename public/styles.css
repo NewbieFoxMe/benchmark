@@ -87,7 +87,8 @@ a { color: inherit; }
 .arena-legend > span { display: inline-flex; align-items: center; gap: 6px; }
 .arena-legend i { width: 13px; height: 7px; border-radius: 4px; }
 .legend-proprietary { background: #7455d3; }
-.legend-other { background: #139d83; }
+.legend-open { background: #139d83; }
+.legend-unknown { background: #9298a3; }
 .arena-canvas { margin: 0 20px; }
 .arena-chart-inner { position: relative; width: 100%; height: 580px; }
 .chart-note { margin: 0; padding: 11px 24px 17px; color: #8b919d; font-size: 11px; line-height: 1.5; }
