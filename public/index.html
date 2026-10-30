@@ -4,11 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#15231f" />
-    <meta name="description" content="Benchmark：按相同工作负载比较自托管 LLM 推理服务的吞吐、首 Token 延迟、解码速度与端到端时间。" />
-    <title>Benchmark — LLM 推理服务基准测试</title>
+    <meta name="description" content="Benchmark：查看公开模型榜单与自托管 LLM 推理服务实测曲线，来源与测量条件清晰可查。" />
+    <title>Benchmark — AI 模型与推理服务基准数据</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/styles.css" />
+    <script src="/vendor/chart.umd.min.js"></script>
     <script type="module" src="/app.js"></script>
+    <script type="module" src="/arena.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳转到主要内容</a>
@@ -19,6 +21,7 @@
           <span class="brand-name">BENCHMARK<span class="brand-suffix">/ DEV SUPRANETT</span></span>
         </a>
         <nav class="site-nav" aria-label="主导航">
+          <a href="#models">模型榜单</a>
           <a href="#leaderboard">服务对比</a>
           <a href="#methodology">指标口径</a>
           <a class="nav-source" href="https://github.com/NewbieFoxMe/benchmark" target="_blank" rel="noopener noreferrer">项目源码 <span aria-hidden="true">↗</span></a>
@@ -32,36 +35,63 @@
           <div class="hero-copy">
             <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span> OPEN BENCHMARK / ALPHA</div>
             <h1 id="hero-title">让每个性能数字<br /><em>都有出处。</em></h1>
-            <p>在相同模型、硬件与负载下比较推理服务的吞吐和延迟。测试条件、评测时间与结果来源一起公开。</p>
+            <p>公开模型偏好榜与同负载服务实测分开展示。评测口径、时间和来源一起交代清楚。</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#leaderboard">查看服务对比 <span aria-hidden="true">↘</span></a>
-              <a class="button button-ghost" href="#methodology">了解指标口径 <span aria-hidden="true">→</span></a>
+              <a class="button button-primary" href="#models">查看模型榜单 <span aria-hidden="true">↘</span></a>
+              <a class="button button-ghost" href="#leaderboard">查看服务曲线 <span aria-hidden="true">→</span></a>
             </div>
           </div>
           <div class="hero-panel" aria-label="数据状态">
-            <div class="panel-topline"><span>PUBLIC DATASET</span><span>V 0.1</span></div>
+            <div class="panel-topline"><span>SERVICE BENCHMARK</span><span>V 0.1</span></div>
             <div class="panel-core">
               <span class="panel-kicker">当前状态</span>
               <strong id="hero-status">读取评测数据<span class="panel-period">.</span></strong>
+              <div class="hero-chart-wrap" id="hero-chart-wrap" hidden><canvas id="hero-chart" role="img" aria-label="总吞吐并发曲线"></canvas></div>
               <p id="hero-description">正在加载服务配置与实测结果。</p>
             </div>
-            <div class="panel-bottomline"><span>已发布结果</span><strong id="hero-count">00</strong><span class="panel-asterisk" aria-hidden="true">✳</span></div>
+            <div class="panel-bottomline"><span>已发布服务结果</span><strong id="hero-count">00</strong><span class="panel-asterisk" aria-hidden="true">✳</span></div>
           </div>
         </div>
       </section>
 
       <div class="signal-strip" aria-label="项目原则">
         <div class="container signal-inner">
-          <span><i aria-hidden="true">01</i> 同一负载</span>
-          <span><i aria-hidden="true">02</i> 客户端计时</span>
+          <span><i aria-hidden="true">01</i> 多源数据</span>
+          <span><i aria-hidden="true">02</i> 指标分域</span>
           <span><i aria-hidden="true">03</i> 结果可追溯</span>
           <span class="signal-label">MEASURE WHAT MATTERS <span aria-hidden="true">↗</span></span>
         </div>
       </div>
 
+      <section class="models section container" id="models" aria-labelledby="models-title">
+        <div class="section-heading">
+          <div><span class="section-index">01 / MODELS</span><h2 id="models-title">公开模型榜单<span class="heading-period">.</span></h2></div>
+          <p>Arena 文本偏好评分来自匿名对比投票，与下方服务吞吐测量分别展示。</p>
+        </div>
+        <div class="arena-board">
+          <div class="arena-topline"><div><span class="chart-kicker">ARENA / TEXT · STYLE CONTROL</span><h3>模型偏好评分</h3></div><span id="arena-published">读取数据中</span></div>
+          <div class="arena-controls" id="arena-controls" hidden>
+            <label class="search-field"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">搜索模型或机构</span><input id="arena-search" type="search" placeholder="搜索模型或机构" autocomplete="off" /></label>
+            <label class="sort-field">许可 <select id="arena-license"><option value="all">全部</option><option value="proprietary">专有</option><option value="other">其他许可</option></select></label>
+            <label class="sort-field">表格行数 <select id="arena-limit"><option value="30">30</option><option value="100">100</option><option value="all">全部</option></select></label>
+            <span id="arena-count" class="arena-count"></span>
+          </div>
+          <p id="arena-empty" class="arena-empty">正在读取 Arena 榜单。</p>
+          <div id="arena-visual" hidden>
+            <div id="arena-plot">
+              <div class="arena-legend"><span><i class="legend-proprietary" aria-hidden="true"></i> 专有许可</span><span><i class="legend-other" aria-hidden="true"></i> 其他许可</span><span>圆点：评分 / 横条：95% 置信区间</span></div>
+              <div class="arena-canvas"><div class="arena-chart-inner"><canvas id="arena-chart" role="img" aria-label="Arena 文本偏好评分与置信区间图"></canvas></div></div>
+              <p class="arena-chart-note">图表显示当前筛选下排名靠前的 15 个模型；表格提供更多结果。</p>
+            </div>
+            <div class="results-wrap arena-table-wrap"><p class="table-hint">左右滑动查看完整结果 →</p><table aria-label="Arena 模型评分数据"><thead><tr><th scope="col">排名</th><th scope="col">模型 / 机构</th><th scope="col">评分</th><th scope="col">95% 区间</th><th scope="col">投票</th></tr></thead><tbody id="arena-body"></tbody></table></div>
+          </div>
+          <div class="arena-footer"><span>数据：<a href="https://arena.ai/leaderboard/chat/text" target="_blank" rel="noopener noreferrer">Arena Text Arena</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></span><a id="arena-dataset" href="https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset" target="_blank" rel="noopener noreferrer">查看原始数据 ↗</a></div>
+        </div>
+      </section>
+
       <section class="leaderboard section container" id="leaderboard" aria-labelledby="leaderboard-title">
         <div class="section-heading">
-          <div><span class="section-index">01 / EXPLORE</span><h2 id="leaderboard-title">服务对比<span class="heading-period">.</span></h2></div>
+          <div><span class="section-index">02 / SERVICES</span><h2 id="leaderboard-title">服务对比<span class="heading-period">.</span></h2></div>
           <p>同一负载、同一并发度下比较服务配置，结合并行策略与 Graph 覆盖解读结果。</p>
         </div>
         <div class="board">
@@ -83,6 +113,18 @@
               <label class="sort-field">排序 <select id="sort"><option value="best">最佳优先</option><option value="name">名称 A–Z</option></select></label>
             </div>
             <p class="workload-caption" id="workload-caption" hidden></p>
+            <div class="charts-grid" id="charts-grid" hidden>
+              <figure class="chart-panel chart-panel-ranking">
+                <figcaption><span class="chart-kicker">01 / SNAPSHOT</span><div><h4 id="ranking-title">总吞吐 · C32 对比</h4><span id="chart-unit">token/s</span></div></figcaption>
+                <div class="chart-canvas"><canvas id="ranking-chart" role="img" aria-label="C32 各服务总吞吐条形图"></canvas></div>
+                <p class="chart-note">同一负载与并发度下比较；精确数值及来源见下方数据表。</p>
+              </figure>
+              <figure class="chart-panel chart-panel-trend">
+                <figcaption><span class="chart-kicker">02 / CONCURRENCY</span><div><h4 id="trend-title">总吞吐 · 并发趋势</h4></div></figcaption>
+                <div class="chart-canvas"><canvas id="trend-chart" role="img" aria-label="总吞吐随并发变化的曲线图"></canvas></div>
+                <p class="chart-note">点击数据点切换并发档位。</p>
+              </figure>
+            </div>
             <div class="results-wrap" id="results-wrap" hidden>
               <p class="table-hint">左右滑动查看完整结果 →</p>
               <table><thead><tr><th scope="col">引擎 / 模型</th><th scope="col" id="metric-column">总吞吐</th><th scope="col">并发</th><th scope="col">测量时间</th><th scope="col">来源</th></tr></thead><tbody id="results-body"></tbody></table>
@@ -98,7 +140,7 @@
 
       <section class="methodology section" id="methodology" aria-labelledby="methodology-title">
         <div class="container">
-          <div class="section-heading method-heading"><div><span class="section-index">02 / MEASURE</span><h2 id="methodology-title">四个性能维度<span class="heading-period">.</span></h2></div><p>吞吐与请求体验分开看，并发度也必须一起看。</p></div>
+          <div class="section-heading method-heading"><div><span class="section-index">03 / MEASURE</span><h2 id="methodology-title">四个性能维度<span class="heading-period">.</span></h2></div><p>吞吐与请求体验分开看，并发度也必须一起看。</p></div>
           <div class="metric-cards">
             <article class="metric-card"><span class="card-number">01 — THROUGHPUT</span><span class="card-glyph" aria-hidden="true">⇢</span><h3>总吞吐</h3><p>测量批次中，每秒完成的输出 token 数；反映并发下的总产出。</p><span class="card-unit">TOKEN / SEC <i>↑</i></span></article>
             <article class="metric-card"><span class="card-number">02 — FIRST TOKEN</span><span class="card-glyph" aria-hidden="true">◷</span><h3>首 Token 延迟</h3><p>客户端从发出请求到收到首个非空输出的平均时间。</p><span class="card-unit">SECONDS <i>↓</i></span></article>
@@ -110,6 +152,6 @@
       </section>
     </main>
 
-    <footer class="site-footer"><div class="container footer-inner"><div><a class="footer-brand" href="#top">B<span>.</span> BENCHMARK</a><p>自托管推理性能，按相同负载比较。</p></div><div class="footer-links"><a href="#leaderboard">服务对比</a><a href="#methodology">指标口径</a><a href="https://github.com/NewbieFoxMe/benchmark" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div><span class="copyright">© 2026 Benchmark</span></div></footer>
+    <footer class="site-footer"><div class="container footer-inner"><div><a class="footer-brand" href="#top">B<span>.</span> BENCHMARK</a><p>模型与推理服务数据，按来源分域比较。</p></div><div class="footer-links"><a href="#models">模型榜单</a><a href="#leaderboard">服务对比</a><a href="#methodology">指标口径</a><a href="https://github.com/NewbieFoxMe/benchmark" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div><span class="copyright">© 2026 Benchmark</span></div></footer>
   </body>
 </html>

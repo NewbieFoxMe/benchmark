@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { readFile } from 'node:fs/promises';
 import { isValidDataset, isValidResult, isValidWorkload, sortAndFilter } from '../public/benchmark.js';
+import { buildChartView } from '../public/charts.js';
+import { filterArenaModels, isValidArenaDataset } from '../public/arena-data.js';
 
 const workload = { id: 'short', label: '短输入', hardware: '8 GPUs', inputTokens: 1028, outputTokens: 128 };
 const base = {
@@ -64,4 +66,26 @@ test('published results match the audited aggregate evidence', async () => {
     }
   }
   assert.equal(keys.size, dataset.results.length);
+});
+
+test('chart series preserve concurrency levels and metric values', async () => {
+  const dataset = JSON.parse(await readFile(new URL('../public/data/results.json', import.meta.url), 'utf8'));
+  const view = buildChartView(dataset.results, 'short-1028-128', 'throughput');
+  assert.deepEqual(view.levels, [1, 8, 16, 32, 64, 128, 256]);
+  assert.deepEqual(view.series.map((item) => item.label), ['DeepInfer', 'SGLang', 'vLLM']);
+  assert.equal(view.series[0].values.get(32), 713.4327353519229);
+  assert.equal(view.series[2].values.get(256), 759.5940542481228);
+  assert.deepEqual(buildChartView(dataset.results, 'short-1028-128', 'ttft', 'sglang').series.map((item) => item.label), ['SGLang']);
+});
+
+test('Arena snapshot stays separate and supports model filtering', async () => {
+  const payload = JSON.parse(await readFile(new URL('../public/data/arena-text.json', import.meta.url), 'utf8'));
+  assert.equal(isValidArenaDataset(payload), true);
+  assert.ok(payload.models.length > 100);
+  assert.equal(payload.source.license, 'CC BY 4.0');
+  assert.ok(payload.source.datasetUrl.includes(payload.source.revision));
+  assert.equal(isValidArenaDataset({ ...payload, models: [{ ...payload.models[0], rank: 2 }] }), false);
+  assert.equal(isValidArenaDataset({ ...payload, source: { ...payload.source, datasetUrl: 'javascript:alert(1)' } }), false);
+  assert.equal(filterArenaModels(payload.models, { query: 'claude', license: 'proprietary' }).every((model) => model.name.toLowerCase().includes('claude') && model.license === 'Proprietary'), true);
+  assert.equal(filterArenaModels(payload.models, { license: 'other' }).every((model) => model.license !== 'Proprietary'), true);
 });

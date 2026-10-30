@@ -1,6 +1,7 @@
 export const METRICS = {
   throughput: {
     title: '总吞吐',
+    unit: 'token/s',
     description: '整个测量批次每秒完成的输出 token 数。相同负载与并发度下比较。',
     direction: '↑ 越高越好',
     field: 'outputTps',
@@ -9,6 +10,7 @@ export const METRICS = {
   },
   ttft: {
     title: '首 Token 延迟',
+    unit: '秒',
     description: '客户端从发出请求到收到首个非空输出的平均时间。',
     direction: '↓ 越低越好',
     field: 'ttftSeconds',
@@ -17,6 +19,7 @@ export const METRICS = {
   },
   decode: {
     title: '单请求解码速度',
+    unit: 'token/s / 请求',
     description: '逐请求计算首 Token 后的输出速率，再按请求聚合。',
     direction: '↑ 越高越好',
     field: 'requestDecodeTps',
@@ -25,6 +28,7 @@ export const METRICS = {
   },
   e2e: {
     title: '端到端时间',
+    unit: '秒',
     description: '客户端从发出请求到收到完整输出的平均耗时。',
     direction: '↓ 越低越好',
     field: 'e2eSeconds',

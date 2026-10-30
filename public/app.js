@@ -1,4 +1,5 @@
 import { METRICS, isValidDataset, metricValue, sortAndFilter } from './benchmark.js';
+import { BenchmarkCharts } from './charts.js';
 
 const state = { metric: 'throughput', results: [], workloads: [], workloadId: null, concurrency: null, query: '', sort: 'best' };
 const elements = {
@@ -14,6 +15,11 @@ const elements = {
   sort: document.querySelector('#sort'),
   caption: document.querySelector('#workload-caption'),
 };
+const charts = window.Chart ? new BenchmarkCharts(window.Chart, (level) => {
+  state.concurrency = level;
+  elements.concurrency.value = String(level);
+  renderRows();
+}) : null;
 
 function setMetric(metric) {
   state.metric = metric;
@@ -72,6 +78,10 @@ function renderRows() {
   elements.emptyState.hidden = hasData && matches.length > 0;
   elements.emptyState.querySelector('a').hidden = hasData;
   document.querySelector('#result-count').textContent = hasData ? `${matches.length} / ${state.results.length} 条结果` : '0 条结果';
+  if (charts && hasData) {
+    charts.renderHero(state.results, state.workloadId);
+    charts.renderBoard(state);
+  }
   if (hasData && matches.length === 0) {
     elements.emptyState.querySelector('.empty-label').textContent = 'FILTER / EMPTY';
     elements.emptyState.querySelector('h4').textContent = '当前条件没有结果';
@@ -117,8 +127,8 @@ try {
   state.workloads = workloads;
   document.querySelector('#hero-count').textContent = String(results.length).padStart(2, '0');
   if (results.length > 0) {
-    document.querySelector('#hero-status').textContent = '实测结果已发布.';
-    document.querySelector('#hero-description').textContent = '按工作负载与并发度筛选，比较推理服务表现。';
+    document.querySelector('#hero-status').textContent = '实测吞吐曲线.';
+    document.querySelector('#hero-description').textContent = '总吞吐随并发变化；完整指标见下方。';
   } else {
     document.querySelector('#hero-status').textContent = '暂无已发布结果.';
     document.querySelector('#hero-description').textContent = '评测结果发布后将显示在这里。';

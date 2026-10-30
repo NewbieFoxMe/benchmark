@@ -1,0 +1,4203 @@
+{
+  "source": {
+    "name": "Arena Text Arena · Style Control",
+    "url": "https://arena.ai/leaderboard/chat/text",
+    "datasetUrl": "https://huggingface.co/datasets/lmarena-ai/leaderboard-dataset/tree/323062f70843f40e3f739865c3fe9d806126e412/text_style_control",
+    "license": "CC BY 4.0",
+    "revision": "323062f70843f40e3f739865c3fe9d806126e412",
+    "publishedAt": "2026-10-28",
+    "retrievedAt": "2026-10-30T13:15:26.412Z"
+  },
+  "models": [
+    {
+      "rank": 1,
+      "name": "Gemini 4 Carbon (High)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1527.5065447464403,
+      "ratingLower": 1518.0976265288389,
+      "ratingUpper": 1536.9154629640418,
+      "votes": 4403
+    },
+    {
+      "rank": 2,
+      "name": "Gemini 4 Argon (High)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1520.254646597456,
+      "ratingLower": 1513.9807620604795,
+      "ratingUpper": 1526.5285311344326,
+      "votes": 11889
+    },
+    {
+      "rank": 3,
+      "name": "Claude Opus 5.5 (High)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1508.697590625909,
+      "ratingLower": 1502.0905562675373,
+      "ratingUpper": 1515.304624984281,
+      "votes": 11415
+    },
+    {
+      "rank": 4,
+      "name": "Muse Wonder (Max)",
+      "organization": "meta",
+      "license": "Proprietary",
+      "rating": 1507.0976650433042,
+      "ratingLower": 1499.7594852426907,
+      "ratingUpper": 1514.4358448439177,
+      "votes": 7749
+    },
+    {
+      "rank": 5,
+      "name": "Claude Fable 5.1 (Max)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1504.3663236556554,
+      "ratingLower": 1498.5536609399205,
+      "ratingUpper": 1510.1789863713905,
+      "votes": 17178
+    },
+    {
+      "rank": 6,
+      "name": "Claude Fable 5 (High)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1503.8924288671988,
+      "ratingLower": 1499.7175670435072,
+      "ratingUpper": 1508.06729069089,
+      "votes": 45341
+    },
+    {
+      "rank": 7,
+      "name": "Claude Opus 4.6 (High)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1503.162754839902,
+      "ratingLower": 1499.8981177710511,
+      "ratingUpper": 1506.4273919087525,
+      "votes": 84512
+    },
+    {
+      "rank": 8,
+      "name": "Claude Opus 4.7 (High)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1501.0497826033693,
+      "ratingLower": 1497.2938059584974,
+      "ratingUpper": 1504.8057592482412,
+      "votes": 65110
+    },
+    {
+      "rank": 9,
+      "name": "Claude Opus 4.6",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1496.0960670372383,
+      "ratingLower": 1492.91127015639,
+      "ratingUpper": 1499.2808639180864,
+      "votes": 89324
+    },
+    {
+      "rank": 10,
+      "name": "Gemini 3.8 Flash (High)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1495.9450931791241,
+      "ratingLower": 1491.5081295194072,
+      "ratingUpper": 1500.382056838841,
+      "votes": 47803
+    },
+    {
+      "rank": 11,
+      "name": "Muse Spark 1.3 (Max)",
+      "organization": "meta",
+      "license": "Proprietary",
+      "rating": 1495.0456185334651,
+      "ratingLower": 1489.8004460490702,
+      "ratingUpper": 1500.29079101786,
+      "votes": 22134
+    },
+    {
+      "rank": 12,
+      "name": "Claude Opus 4.7",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1493.7218399926346,
+      "ratingLower": 1489.961792976673,
+      "ratingUpper": 1497.4818870085965,
+      "votes": 66140
+    },
+    {
+      "rank": 13,
+      "name": "Muse Spark 1.2 (xHigh)",
+      "organization": "meta",
+      "license": "Proprietary",
+      "rating": 1492.188040510066,
+      "ratingLower": 1485.840798516926,
+      "ratingUpper": 1498.5352825032057,
+      "votes": 11724
+    },
+    {
+      "rank": 14,
+      "name": "Claude Opus 5 (High)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1491.5506057614894,
+      "ratingLower": 1487.971519852062,
+      "ratingUpper": 1495.1296916709166,
+      "votes": 73167
+    },
+    {
+      "rank": 15,
+      "name": "Claude Opus 5 (Max)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1490.5040398730391,
+      "ratingLower": 1485.8089547287518,
+      "ratingUpper": 1495.1991250173262,
+      "votes": 35531
+    },
+    {
+      "rank": 16,
+      "name": "Muse Spark 1.1",
+      "organization": "meta",
+      "license": "Proprietary",
+      "rating": 1490.2351603730194,
+      "ratingLower": 1486.085534840864,
+      "ratingUpper": 1494.3847859051748,
+      "votes": 46354
+    },
+    {
+      "rank": 17,
+      "name": "Gemini 3.7 Flash (High)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1489.5500575529784,
+      "ratingLower": 1484.875869523599,
+      "ratingUpper": 1494.2242455823578,
+      "votes": 32289
+    },
+    {
+      "rank": 18,
+      "name": "Muse Spark",
+      "organization": "meta",
+      "license": "Proprietary",
+      "rating": 1489.0250787876926,
+      "ratingLower": 1483.2951987364586,
+      "ratingUpper": 1494.7549588389263,
+      "votes": 14140
+    },
+    {
+      "rank": 19,
+      "name": "Kimi K3 (Max)",
+      "organization": "moonshot",
+      "license": "Kimi K3 license",
+      "rating": 1488.1894728804475,
+      "ratingLower": 1483.7478823920198,
+      "ratingUpper": 1492.6310633688752,
+      "votes": 36780
+    },
+    {
+      "rank": 20,
+      "name": "Gemini 3.1 Pro Preview",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1486.8999611035829,
+      "ratingLower": 1483.975929845154,
+      "ratingUpper": 1489.8239923620117,
+      "votes": 132547
+    },
+    {
+      "rank": 21,
+      "name": "Gemini 3 Pro",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1485.4329182845129,
+      "ratingLower": 1481.6427948059036,
+      "ratingUpper": 1489.2230417631222,
+      "votes": 42057
+    },
+    {
+      "rank": 22,
+      "name": "GPT-5.6 Sol (xHigh)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1484.910477373644,
+      "ratingLower": 1480.674920209976,
+      "ratingUpper": 1489.1460345373118,
+      "votes": 43796
+    },
+    {
+      "rank": 23,
+      "name": "Gemini 3.6 Flash (High)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1483.155122800798,
+      "ratingLower": 1478.7318340137006,
+      "ratingUpper": 1487.5784115878955,
+      "votes": 36028
+    },
+    {
+      "rank": 24,
+      "name": "Qwen3.8-Max",
+      "organization": "alibaba",
+      "license": "Proprietary",
+      "rating": 1482.4121421338182,
+      "ratingLower": 1477.6209730159067,
+      "ratingUpper": 1487.2033112517297,
+      "votes": 31915
+    },
+    {
+      "rank": 25,
+      "name": "Claude Opus 4.8 (High)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1481.711070665865,
+      "ratingLower": 1477.8452796687382,
+      "ratingUpper": 1485.5768616629919,
+      "votes": 63994
+    },
+    {
+      "rank": 26,
+      "name": "GPT-5.5 (High)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1481.6951264151023,
+      "ratingLower": 1477.9742509598316,
+      "ratingUpper": 1485.416001870373,
+      "votes": 69377
+    },
+    {
+      "rank": 27,
+      "name": "GPT-6.1 Sol (Max)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1481.3279556386954,
+      "ratingLower": 1474.2787467779222,
+      "ratingUpper": 1488.3771644994686,
+      "votes": 9367
+    },
+    {
+      "rank": 28,
+      "name": "GLM-5.3 (Max)",
+      "organization": "zai",
+      "license": "MIT",
+      "rating": 1480.5693804560872,
+      "ratingLower": 1475.6177544855943,
+      "ratingUpper": 1485.5210064265802,
+      "votes": 26606
+    },
+    {
+      "rank": 29,
+      "name": "MiMo-V2.6-Pro",
+      "organization": "xiaomi",
+      "license": "MIT",
+      "rating": 1479.6978910104858,
+      "ratingLower": 1470.2777430485708,
+      "ratingUpper": 1489.1180389724009,
+      "votes": 4037
+    },
+    {
+      "rank": 30,
+      "name": "Gemini 3.5 Flash (High)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1477.6273768777826,
+      "ratingLower": 1473.738227625252,
+      "ratingUpper": 1481.5165261303132,
+      "votes": 48376
+    },
+    {
+      "rank": 31,
+      "name": "Claude Sonnet 5.5 (xHigh)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1477.1495460775536,
+      "ratingLower": 1470.3716071551614,
+      "ratingUpper": 1483.927484999946,
+      "votes": 10033
+    },
+    {
+      "rank": 32,
+      "name": "GPT-5.5",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1476.6501726608242,
+      "ratingLower": 1472.9661985423302,
+      "ratingUpper": 1480.3341467793184,
+      "votes": 70949
+    },
+    {
+      "rank": 33,
+      "name": "GLM-5.3-Flash",
+      "organization": "zai",
+      "license": "MIT",
+      "rating": 1476.515607263063,
+      "ratingLower": 1471.8592041682025,
+      "ratingUpper": 1481.1720103579232,
+      "votes": 41642
+    },
+    {
+      "rank": 34,
+      "name": "Gemini 3.5 Flash (Medium)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1476.4083888193472,
+      "ratingLower": 1472.263373011409,
+      "ratingUpper": 1480.5534046272853,
+      "votes": 47196
+    },
+    {
+      "rank": 35,
+      "name": "DeepSeek-V4.1-Flash-20260910 (Max)",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1476.2276332489914,
+      "ratingLower": 1470.1293852029012,
+      "ratingUpper": 1482.3258812950814,
+      "votes": 13657
+    },
+    {
+      "rank": 36,
+      "name": "GPT-5.2 Chat (20260210)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1475.663943245187,
+      "ratingLower": 1471.6238131578846,
+      "ratingUpper": 1479.7040733324898,
+      "votes": 35974
+    },
+    {
+      "rank": 37,
+      "name": "GPT-6 Astra (Max)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1475.647885100779,
+      "ratingLower": 1469.7245375654447,
+      "ratingUpper": 1481.571232636113,
+      "votes": 15038
+    },
+    {
+      "rank": 38,
+      "name": "GLM-5.2 (Max)",
+      "organization": "zai",
+      "license": "MIT",
+      "rating": 1475.289755722248,
+      "ratingLower": 1471.2124673862706,
+      "ratingUpper": 1479.3670440582252,
+      "votes": 53702
+    },
+    {
+      "rank": 39,
+      "name": "GPT-5.4 (High)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1475.2741681865632,
+      "ratingLower": 1471.5108937519087,
+      "ratingUpper": 1479.037442621218,
+      "votes": 64748
+    },
+    {
+      "rank": 40,
+      "name": "Grok 4.20 Beta 1",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1474.613310067447,
+      "ratingLower": 1470.0463058314608,
+      "ratingUpper": 1479.1803143034329,
+      "votes": 27889
+    },
+    {
+      "rank": 41,
+      "name": "Claude Opus 4.8",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1474.4403985039223,
+      "ratingLower": 1470.5955126683966,
+      "ratingUpper": 1478.285284339448,
+      "votes": 65121
+    },
+    {
+      "rank": 42,
+      "name": "Qwen3.7-Max-Preview",
+      "organization": "alibaba",
+      "license": "Proprietary",
+      "rating": 1473.7034427077983,
+      "ratingLower": 1463.9687689777431,
+      "ratingUpper": 1483.4381164378538,
+      "votes": 3932
+    },
+    {
+      "rank": 43,
+      "name": "Claude Opus 4.5 (High, 32K, 20251101)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1473.6904735629234,
+      "ratingLower": 1469.859096717867,
+      "ratingUpper": 1477.5218504079799,
+      "votes": 37484
+    },
+    {
+      "rank": 44,
+      "name": "GPT-5.5 Instant",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1473.1665868835428,
+      "ratingLower": 1468.162452193461,
+      "ratingUpper": 1478.1707215736249,
+      "votes": 27128
+    },
+    {
+      "rank": 45,
+      "name": "Gemini 3 Flash",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1472.7476280219503,
+      "ratingLower": 1468.4059119538974,
+      "ratingUpper": 1477.0893440900034,
+      "votes": 31301
+    },
+    {
+      "rank": 46,
+      "name": "Claude Sonnet 4.6",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1471.9506765539006,
+      "ratingLower": 1468.4397956081814,
+      "ratingUpper": 1475.4615574996196,
+      "votes": 70916
+    },
+    {
+      "rank": 47,
+      "name": "Grok 4.20 Beta (Reasoning, 0309)",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1471.7400417518265,
+      "ratingLower": 1468.0682230090126,
+      "ratingUpper": 1475.4118604946405,
+      "votes": 66422
+    },
+    {
+      "rank": 48,
+      "name": "Grok 4.20 Multi-Agent Beta (0309)",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1470.7060855161687,
+      "ratingLower": 1467.0052862511059,
+      "ratingUpper": 1474.4068847812318,
+      "votes": 64917
+    },
+    {
+      "rank": 49,
+      "name": "Claude Opus 4.5 (20251101)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1469.675572905361,
+      "ratingLower": 1466.544945688652,
+      "ratingUpper": 1472.80620012207,
+      "votes": 72825
+    },
+    {
+      "rank": 50,
+      "name": "GPT-5.6 Terra (xHigh)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1467.337294227145,
+      "ratingLower": 1463.1916387657736,
+      "ratingUpper": 1471.4829496885166,
+      "votes": 48166
+    },
+    {
+      "rank": 51,
+      "name": "ERNIE 5.1",
+      "organization": "baidu",
+      "license": "Proprietary",
+      "rating": 1467.0849028356718,
+      "ratingLower": 1462.5468395754256,
+      "ratingUpper": 1471.622966095918,
+      "votes": 39469
+    },
+    {
+      "rank": 52,
+      "name": "MiMo-V2.5-Pro",
+      "organization": "xiaomi",
+      "license": "MIT",
+      "rating": 1466.599824571988,
+      "ratingLower": 1463.0916206231575,
+      "ratingUpper": 1470.1080285208184,
+      "votes": 77728
+    },
+    {
+      "rank": 53,
+      "name": "Grok 4.5",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1465.4464199324245,
+      "ratingLower": 1461.1125902642827,
+      "ratingUpper": 1469.780249600566,
+      "votes": 39801
+    },
+    {
+      "rank": 54,
+      "name": "GLM-5.1",
+      "organization": "zai",
+      "license": "MIT",
+      "rating": 1465.3780546778316,
+      "ratingLower": 1461.855027204477,
+      "ratingUpper": 1468.9010821511865,
+      "votes": 66771
+    },
+    {
+      "rank": 55,
+      "name": "DeepSeek-V4-Pro (High, 20260813)",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1465.0587343984691,
+      "ratingLower": 1458.4447389115303,
+      "ratingUpper": 1471.6727298854082,
+      "votes": 9787
+    },
+    {
+      "rank": 56,
+      "name": "Grok 4.1 (Thinking)",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1465.0468418320115,
+      "ratingLower": 1461.8682128442695,
+      "ratingUpper": 1468.2254708197534,
+      "votes": 66470
+    },
+    {
+      "rank": 57,
+      "name": "GPT-5.4",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1465.0420209057206,
+      "ratingLower": 1461.3576305284023,
+      "ratingUpper": 1468.726411283039,
+      "votes": 67856
+    },
+    {
+      "rank": 58,
+      "name": "Qwen3.5-Max-Preview",
+      "organization": "alibaba",
+      "license": "Proprietary",
+      "rating": 1464.6412303551938,
+      "ratingLower": 1459.759633748326,
+      "ratingUpper": 1469.5228269620616,
+      "votes": 22582
+    },
+    {
+      "rank": 59,
+      "name": "Claude Sonnet 5 (High)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1461.7446227242526,
+      "ratingLower": 1457.7108788638716,
+      "ratingUpper": 1465.7783665846334,
+      "votes": 52952
+    },
+    {
+      "rank": 60,
+      "name": "Kimi K2.6",
+      "organization": "moonshot",
+      "license": "Modified MIT",
+      "rating": 1460.9562197110456,
+      "ratingLower": 1456.530250670766,
+      "ratingUpper": 1465.3821887513254,
+      "votes": 39978
+    },
+    {
+      "rank": 61,
+      "name": "Qwen3.6-Max-Preview",
+      "organization": "alibaba",
+      "license": "Proprietary",
+      "rating": 1460.2131590348529,
+      "ratingLower": 1452.0171024761185,
+      "ratingUpper": 1468.4092155935873,
+      "votes": 5419
+    },
+    {
+      "rank": 62,
+      "name": "Grok 4.1",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1459.003656538777,
+      "ratingLower": 1455.838630088007,
+      "ratingUpper": 1462.168682989547,
+      "votes": 68599
+    },
+    {
+      "rank": 63,
+      "name": "Gemini 3 Flash (Minimal)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1458.367316107511,
+      "ratingLower": 1455.3469376501532,
+      "ratingUpper": 1461.3876945648688,
+      "votes": 90997
+    },
+    {
+      "rank": 64,
+      "name": "GPT-6 Sol (Max)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1458.3170296467606,
+      "ratingLower": 1452.4355593681316,
+      "ratingUpper": 1464.1984999253893,
+      "votes": 15807
+    },
+    {
+      "rank": 65,
+      "name": "DeepSeek-V4-Pro",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1457.7736205861343,
+      "ratingLower": 1453.8793278208766,
+      "ratingUpper": 1461.667913351392,
+      "votes": 57572
+    },
+    {
+      "rank": 66,
+      "name": "GLM-5",
+      "organization": "zai",
+      "license": "MIT",
+      "rating": 1457.2370395963933,
+      "ratingLower": 1452.993281087791,
+      "ratingUpper": 1461.4807981049955,
+      "votes": 29255
+    },
+    {
+      "rank": 67,
+      "name": "Claude Sonnet 4.5 (High, 32K, 20250929)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1456.3246398176152,
+      "ratingLower": 1453.565285993781,
+      "ratingUpper": 1459.0839936414493,
+      "votes": 83892
+    },
+    {
+      "rank": 68,
+      "name": "Dola Seed 2.0 Pro",
+      "organization": "bytedance",
+      "license": "Proprietary",
+      "rating": 1456.1335122989926,
+      "ratingLower": 1452.7424313113504,
+      "ratingUpper": 1459.5245932866346,
+      "votes": 79094
+    },
+    {
+      "rank": 69,
+      "name": "GPT-5.1 (High)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1455.7030125963045,
+      "ratingLower": 1451.9949703395896,
+      "ratingUpper": 1459.4110548530193,
+      "votes": 41639
+    },
+    {
+      "rank": 70,
+      "name": "Qwen3.7-Plus",
+      "organization": "alibaba",
+      "license": "Proprietary",
+      "rating": 1455.6645763163579,
+      "ratingLower": 1451.3325809713583,
+      "ratingUpper": 1459.9965716613576,
+      "votes": 42011
+    },
+    {
+      "rank": 71,
+      "name": "Gemini 3.5 Flash-Lite",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1455.6556795012555,
+      "ratingLower": 1451.1837631408357,
+      "ratingUpper": 1460.1275958616752,
+      "votes": 35740
+    },
+    {
+      "rank": 72,
+      "name": "Grok 4.6 (High)",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1455.4817158656808,
+      "ratingLower": 1450.8587047076555,
+      "ratingUpper": 1460.1047270237061,
+      "votes": 33824
+    },
+    {
+      "rank": 73,
+      "name": "Claude Sonnet 4.5 (20250929)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1455.0538290959935,
+      "ratingLower": 1452.1928577349063,
+      "ratingUpper": 1457.914800457081,
+      "votes": 82621
+    },
+    {
+      "rank": 74,
+      "name": "DeepSeek-V4-Pro Preview (High)",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1454.894064898029,
+      "ratingLower": 1450.9328270214685,
+      "ratingUpper": 1458.8553027745895,
+      "votes": 54870
+    },
+    {
+      "rank": 75,
+      "name": "Hy3",
+      "organization": "tencent",
+      "license": "Apache 2.0",
+      "rating": 1454.4774865775755,
+      "ratingLower": 1448.5985312551536,
+      "ratingUpper": 1460.3564418999972,
+      "votes": 13840
+    },
+    {
+      "rank": 76,
+      "name": "GPT-5.6 Luna (xHigh)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1453.0205808990422,
+      "ratingLower": 1448.7247044517442,
+      "ratingUpper": 1457.3164573463403,
+      "votes": 41317
+    },
+    {
+      "rank": 77,
+      "name": "Gemma 4 31B",
+      "organization": "google",
+      "license": "Apache 2.0",
+      "rating": 1452.2892381987065,
+      "ratingLower": 1444.847663508007,
+      "ratingUpper": 1459.7308128894058,
+      "votes": 6138
+    },
+    {
+      "rank": 78,
+      "name": "GPT-5.3 Chat",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1450.1062189880977,
+      "ratingLower": 1445.8710972629003,
+      "ratingUpper": 1454.341340713295,
+      "votes": 34316
+    },
+    {
+      "rank": 79,
+      "name": "Claude Opus 4.1 (Thinking 16K, 20250805)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1449.768378495309,
+      "ratingLower": 1446.3183438271456,
+      "ratingUpper": 1453.2184131634724,
+      "votes": 49535
+    },
+    {
+      "rank": 80,
+      "name": "Kimi K2.5 (Thinking)",
+      "organization": "moonshot",
+      "license": "Modified MIT",
+      "rating": 1449.746776109821,
+      "ratingLower": 1446.468641086324,
+      "ratingUpper": 1453.0249111333183,
+      "votes": 74682
+    },
+    {
+      "rank": 81,
+      "name": "ERNIE-5.0-Preview (1203)",
+      "organization": "baidu",
+      "license": "Proprietary",
+      "rating": 1448.4854097345738,
+      "ratingLower": 1441.9859917504982,
+      "ratingUpper": 1454.9848277186493,
+      "votes": 9802
+    },
+    {
+      "rank": 82,
+      "name": "Step 5 Preview",
+      "organization": "stepfun",
+      "license": "Proprietary",
+      "rating": 1448.3740011611799,
+      "ratingLower": 1442.0002716744423,
+      "ratingUpper": 1454.7477306479175,
+      "votes": 11355
+    },
+    {
+      "rank": 83,
+      "name": "Claude Opus 4.1 (20250805)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1448.0134195918026,
+      "ratingLower": 1445.043203246645,
+      "ratingUpper": 1450.9836359369604,
+      "votes": 77213
+    },
+    {
+      "rank": 84,
+      "name": "MiMo-V2-Pro",
+      "organization": "xiaomi",
+      "license": "Proprietary",
+      "rating": 1447.7625816140405,
+      "ratingLower": 1443.1005205998906,
+      "ratingUpper": 1452.4246426281907,
+      "votes": 25421
+    },
+    {
+      "rank": 85,
+      "name": "MiMo-V2.6-Flash",
+      "organization": "xiaomi",
+      "license": "MIT",
+      "rating": 1447.5919518386747,
+      "ratingLower": 1441.7890971184845,
+      "ratingUpper": 1453.3948065588652,
+      "votes": 15312
+    },
+    {
+      "rank": 86,
+      "name": "GPT-5.4 mini (High)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1447.1749944782787,
+      "ratingLower": 1443.4304298994193,
+      "ratingUpper": 1450.9195590571383,
+      "votes": 63432
+    },
+    {
+      "rank": 87,
+      "name": "ERNIE 5.0 (0110)",
+      "organization": "baidu",
+      "license": "Proprietary",
+      "rating": 1446.1432272917148,
+      "ratingLower": 1442.2508039898028,
+      "ratingUpper": 1450.0356505936265,
+      "votes": 36475
+    },
+    {
+      "rank": 88,
+      "name": "Gemini 2.5 Pro",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1445.406539696306,
+      "ratingLower": 1442.945472478217,
+      "ratingUpper": 1447.8676069143949,
+      "votes": 125307
+    },
+    {
+      "rank": 89,
+      "name": "GPT-4.5 Preview (2025-02-27)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1444.6364493615704,
+      "ratingLower": 1438.9241474912828,
+      "ratingUpper": 1450.348751231858,
+      "votes": 14547
+    },
+    {
+      "rank": 90,
+      "name": "Qwen3.6-Plus",
+      "organization": "alibaba",
+      "license": "Proprietary",
+      "rating": 1443.001075193124,
+      "ratingLower": 1438.8683148576397,
+      "ratingUpper": 1447.1338355286084,
+      "votes": 48126
+    },
+    {
+      "rank": 91,
+      "name": "ChatGPT-4o Latest (20250326)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1442.6513193899355,
+      "ratingLower": 1439.843176597075,
+      "ratingUpper": 1445.4594621827957,
+      "votes": 81893
+    },
+    {
+      "rank": 92,
+      "name": "Inkling",
+      "organization": "thinky",
+      "license": "Apache 2.0",
+      "rating": 1442.201111233133,
+      "ratingLower": 1437.99108814297,
+      "ratingUpper": 1446.4111343232958,
+      "votes": 45472
+    },
+    {
+      "rank": 93,
+      "name": "Grok 4.3",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1441.6307836382434,
+      "ratingLower": 1438.0047719149723,
+      "ratingUpper": 1445.2567953615148,
+      "votes": 71287
+    },
+    {
+      "rank": 94,
+      "name": "Qwen3.5-397B-A17B",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1441.403236489422,
+      "ratingLower": 1438.3505270018534,
+      "ratingUpper": 1444.4559459769903,
+      "votes": 97675
+    },
+    {
+      "rank": 95,
+      "name": "GLM-4.7",
+      "organization": "zai",
+      "license": "MIT",
+      "rating": 1441.3419390936074,
+      "ratingLower": 1435.2850438116047,
+      "ratingUpper": 1447.3988343756102,
+      "votes": 12239
+    },
+    {
+      "rank": 96,
+      "name": "Grok 4.7 (xHigh)",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1441.2270542052997,
+      "ratingLower": 1435.4826498260613,
+      "ratingUpper": 1446.9714585845381,
+      "votes": 16442
+    },
+    {
+      "rank": 97,
+      "name": "GPT-6 Luna (Max)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1440.8674264272704,
+      "ratingLower": 1436.5940306075972,
+      "ratingUpper": 1445.1408222469436,
+      "votes": 86478
+    },
+    {
+      "rank": 98,
+      "name": "MiniMax-M3",
+      "organization": "minimax",
+      "license": "MiniMax Community License",
+      "rating": 1439.2396535610842,
+      "ratingLower": 1435.4918792710646,
+      "ratingUpper": 1442.9874278511038,
+      "votes": 68611
+    },
+    {
+      "rank": 99,
+      "name": "DeepSeek-V4-Flash Preview (High)",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1438.6546684400676,
+      "ratingLower": 1434.5497477960748,
+      "ratingUpper": 1442.7595890840603,
+      "votes": 51763
+    },
+    {
+      "rank": 100,
+      "name": "GPT-5.1",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1438.53353429247,
+      "ratingLower": 1434.944035196994,
+      "ratingUpper": 1442.1230333879457,
+      "votes": 44413
+    },
+    {
+      "rank": 101,
+      "name": "Gemma 4 26B A4B",
+      "organization": "google",
+      "license": "Apache 2.0",
+      "rating": 1437.598405361463,
+      "ratingLower": 1430.1601299487525,
+      "ratingUpper": 1445.0366807741734,
+      "votes": 6090
+    },
+    {
+      "rank": 102,
+      "name": "GPT-5.2 (High)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1437.2916252001148,
+      "ratingLower": 1433.7399325452702,
+      "ratingUpper": 1440.8433178549594,
+      "votes": 49628
+    },
+    {
+      "rank": 103,
+      "name": "LongCat-Flash-Chat Exp (2602)",
+      "organization": "meituan",
+      "license": "Proprietary",
+      "rating": 1436.399317755259,
+      "ratingLower": 1431.8711852935164,
+      "ratingUpper": 1440.927450217002,
+      "votes": 29244
+    },
+    {
+      "rank": 104,
+      "name": "DeepSeek-V4-Flash",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1435.6737041095312,
+      "ratingLower": 1431.6373556569088,
+      "ratingUpper": 1439.7100525621538,
+      "votes": 51944
+    },
+    {
+      "rank": 105,
+      "name": "Beam 1.0 501B A23B",
+      "organization": "reflection",
+      "license": "Apache 2.0",
+      "rating": 1435.6694397002673,
+      "ratingLower": 1426.3467839924333,
+      "ratingUpper": 1444.9920954081012,
+      "votes": 4233
+    },
+    {
+      "rank": 106,
+      "name": "Qwen3.8-27B",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1435.5994372146474,
+      "ratingLower": 1430.7324615817963,
+      "ratingUpper": 1440.4664128474985,
+      "votes": 27779
+    },
+    {
+      "rank": 107,
+      "name": "GPT-5.2",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1435.5539664924265,
+      "ratingLower": 1432.382325117346,
+      "ratingUpper": 1438.7256078675068,
+      "votes": 83793
+    },
+    {
+      "rank": 108,
+      "name": "GPT-5 (High)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1434.7443077683,
+      "ratingLower": 1430.2389905827533,
+      "ratingUpper": 1439.2496249538463,
+      "votes": 31718
+    },
+    {
+      "rank": 109,
+      "name": "Qwen3-Max-Preview",
+      "organization": "alibaba",
+      "license": "Proprietary",
+      "rating": 1434.263084399079,
+      "ratingLower": 1429.7493476114453,
+      "ratingUpper": 1438.7768211867126,
+      "votes": 27368
+    },
+    {
+      "rank": 110,
+      "name": "GLM-5V-Turbo",
+      "organization": "zai",
+      "license": "Proprietary",
+      "rating": 1433.956974097628,
+      "ratingLower": 1427.5236004392682,
+      "ratingUpper": 1440.390347755988,
+      "votes": 10476
+    },
+    {
+      "rank": 111,
+      "name": "MiMo-V2.5",
+      "organization": "xiaomi",
+      "license": "MIT",
+      "rating": 1433.911643961388,
+      "ratingLower": 1429.6900191198065,
+      "ratingUpper": 1438.1332688029695,
+      "votes": 47327
+    },
+    {
+      "rank": 112,
+      "name": "Gemini 3.1 Flash-Lite Preview",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1432.9025098722193,
+      "ratingLower": 1429.28280400838,
+      "ratingUpper": 1436.5222157360588,
+      "votes": 64196
+    },
+    {
+      "rank": 113,
+      "name": "Mistral Large 4",
+      "organization": "mistral",
+      "license": "Proprietary",
+      "rating": 1432.0109534562546,
+      "ratingLower": 1425.7967905585067,
+      "ratingUpper": 1438.2251163540027,
+      "votes": 12066
+    },
+    {
+      "rank": 114,
+      "name": "o3 (2025-04-16)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1431.6592963065307,
+      "ratingLower": 1428.0279525309734,
+      "ratingUpper": 1435.2906400820877,
+      "votes": 58901
+    },
+    {
+      "rank": 115,
+      "name": "MiMo-V2-Omni",
+      "organization": "xiaomi",
+      "license": "Proprietary",
+      "rating": 1430.7321868652,
+      "ratingLower": 1425.1874619985301,
+      "ratingUpper": 1436.2769117318699,
+      "votes": 20615
+    },
+    {
+      "rank": 116,
+      "name": "Kimi K2.5 (Instant)",
+      "organization": "moonshot",
+      "license": "Modified MIT",
+      "rating": 1430.5207275765674,
+      "ratingLower": 1424.0160146390222,
+      "ratingUpper": 1437.0254405141125,
+      "votes": 8371
+    },
+    {
+      "rank": 117,
+      "name": "Grok 4.1 Fast (Reasoning)",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1430.3037614229347,
+      "ratingLower": 1427.1084707027915,
+      "ratingUpper": 1433.4990521430782,
+      "votes": 57500
+    },
+    {
+      "rank": 118,
+      "name": "Kimi K2 Thinking Turbo",
+      "organization": "moonshot",
+      "license": "Modified MIT",
+      "rating": 1429.97001973585,
+      "ratingLower": 1426.8830469113761,
+      "ratingUpper": 1433.0569925603238,
+      "votes": 63310
+    },
+    {
+      "rank": 119,
+      "name": "amazon-nova-experimental-chat (26-02-10)",
+      "organization": "amazon",
+      "license": "Proprietary",
+      "rating": 1426.7107616359447,
+      "ratingLower": 1417.040532709721,
+      "ratingUpper": 1436.3809905621686,
+      "votes": 3523
+    },
+    {
+      "rank": 120,
+      "name": "NVIDIA-Nemotron-3-Ultra-550B-A55B (NVFP4)",
+      "organization": "nvidia",
+      "license": "OpenMDW-1.1",
+      "rating": 1426.511085045769,
+      "ratingLower": 1419.6245014609033,
+      "ratingUpper": 1433.397668630635,
+      "votes": 11563
+    },
+    {
+      "rank": 121,
+      "name": "GPT-5 Chat",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1426.4418086678122,
+      "ratingLower": 1422.1463113745374,
+      "ratingUpper": 1430.7373059610873,
+      "votes": 31187
+    },
+    {
+      "rank": 122,
+      "name": "Mistral Medium 3.5",
+      "organization": "mistral",
+      "license": "Modified MIT",
+      "rating": 1426.3801831551839,
+      "ratingLower": 1419.9871445591725,
+      "ratingUpper": 1432.7732217511955,
+      "votes": 11791
+    },
+    {
+      "rank": 123,
+      "name": "Claude Opus 4 (Thinking 16K, 20250514)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1426.2309402942299,
+      "ratingLower": 1421.8314883487024,
+      "ratingUpper": 1430.6303922397574,
+      "votes": 35904
+    },
+    {
+      "rank": 124,
+      "name": "DeepSeek-V3.2-Exp (Thinking)",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1425.1482798184713,
+      "ratingLower": 1418.5832709684043,
+      "ratingUpper": 1431.7132886685383,
+      "votes": 8991
+    },
+    {
+      "rank": 125,
+      "name": "Muse Glimmer",
+      "organization": "meta",
+      "license": "Apache-2.0",
+      "rating": 1424.9369922923456,
+      "ratingLower": 1415.2328813747727,
+      "ratingUpper": 1434.6411032099188,
+      "votes": 3884
+    },
+    {
+      "rank": 126,
+      "name": "Claude Haiku 5.5 (High)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1424.8248277757675,
+      "ratingLower": 1417.3395649879014,
+      "ratingUpper": 1432.3100905636334,
+      "votes": 7890
+    },
+    {
+      "rank": 127,
+      "name": "DeepSeek-V3.2",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1424.6493999928184,
+      "ratingLower": 1421.1595002916054,
+      "ratingUpper": 1428.1392996940317,
+      "votes": 48095
+    },
+    {
+      "rank": 128,
+      "name": "GLM-4.6",
+      "organization": "zai",
+      "license": "MIT",
+      "rating": 1424.29081320751,
+      "ratingLower": 1420.389946896137,
+      "ratingUpper": 1428.191679518883,
+      "votes": 35810
+    },
+    {
+      "rank": 129,
+      "name": "Qwen3-Max (2025-09-23)",
+      "organization": "alibaba",
+      "license": "Proprietary",
+      "rating": 1423.493901928722,
+      "ratingLower": 1417.008993479008,
+      "ratingUpper": 1429.9788103784358,
+      "votes": 9026
+    },
+    {
+      "rank": 130,
+      "name": "DeepSeek-V3.2 (Thinking)",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1422.3419295440324,
+      "ratingLower": 1418.7695480505274,
+      "ratingUpper": 1425.9143110375371,
+      "votes": 42033
+    },
+    {
+      "rank": 131,
+      "name": "Qwen3-235B-A22B-Instruct (2507)",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1422.2090158406643,
+      "ratingLower": 1419.6587674995571,
+      "ratingUpper": 1424.7592641817712,
+      "votes": 98081
+    },
+    {
+      "rank": 132,
+      "name": "DeepSeek-V3.2-Exp",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1421.7157502484808,
+      "ratingLower": 1415.3381653009765,
+      "ratingUpper": 1428.0933351959852,
+      "votes": 11996
+    },
+    {
+      "rank": 133,
+      "name": "DeepSeek-R1 (0528)",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1421.4568753355518,
+      "ratingLower": 1415.7763087413018,
+      "ratingUpper": 1427.1374419298018,
+      "votes": 18165
+    },
+    {
+      "rank": 134,
+      "name": "Kimi K2 Preview (0905)",
+      "organization": "moonshot",
+      "license": "Modified MIT",
+      "rating": 1418.4695487008767,
+      "ratingLower": 1411.9436662456271,
+      "ratingUpper": 1424.9954311561264,
+      "votes": 11592
+    },
+    {
+      "rank": 135,
+      "name": "Grok 4 Fast (Non-Reasoning)",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1418.4044036446603,
+      "ratingLower": 1410.5953686487637,
+      "ratingUpper": 1426.2134386405567,
+      "votes": 6336
+    },
+    {
+      "rank": 136,
+      "name": "ERNIE-5.0-Preview (1022)",
+      "organization": "baidu",
+      "license": "Proprietary",
+      "rating": 1418.2693908349092,
+      "ratingLower": 1409.5143784581182,
+      "ratingUpper": 1427.0244032117005,
+      "votes": 4755
+    },
+    {
+      "rank": 137,
+      "name": "Kimi K2 Preview (0711)",
+      "organization": "moonshot",
+      "license": "Modified MIT",
+      "rating": 1417.7790098216665,
+      "ratingLower": 1412.8836495373812,
+      "ratingUpper": 1422.6743701059515,
+      "votes": 27139
+    },
+    {
+      "rank": 138,
+      "name": "DeepSeek-V3.1",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1416.9437553664632,
+      "ratingLower": 1410.8820944053907,
+      "ratingUpper": 1423.0054163275358,
+      "votes": 14606
+    },
+    {
+      "rank": 139,
+      "name": "Qwen3.5-122B-A10B",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1416.4559628558934,
+      "ratingLower": 1412.1706656427775,
+      "ratingUpper": 1420.7412600690093,
+      "votes": 29712
+    },
+    {
+      "rank": 140,
+      "name": "DeepSeek-V3.1-Terminus (Thinking)",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1416.0955899433304,
+      "ratingLower": 1405.9943243247758,
+      "ratingUpper": 1426.196855561885,
+      "votes": 3379
+    },
+    {
+      "rank": 141,
+      "name": "DeepSeek-V3.1 (Thinking)",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1415.7979488011777,
+      "ratingLower": 1409.1366838202962,
+      "ratingUpper": 1422.4592137820594,
+      "votes": 11458
+    },
+    {
+      "rank": 142,
+      "name": "MiniMax-M2.7",
+      "organization": "minimax",
+      "license": "Modified MIT",
+      "rating": 1414.9866250132586,
+      "ratingLower": 1411.6848566553626,
+      "ratingUpper": 1418.2883933711546,
+      "votes": 89197
+    },
+    {
+      "rank": 143,
+      "name": "DeepSeek-V3.1-Terminus",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1414.7097787074506,
+      "ratingLower": 1404.9937530523184,
+      "ratingUpper": 1424.425804362583,
+      "votes": 3609
+    },
+    {
+      "rank": 144,
+      "name": "GPT-4.1 (2025-04-14)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1414.6398790428489,
+      "ratingLower": 1410.9256733016061,
+      "ratingUpper": 1418.3540847840918,
+      "votes": 50298
+    },
+    {
+      "rank": 145,
+      "name": "Claude Haiku 4.5 (20251001)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1414.5032620378713,
+      "ratingLower": 1412.1180806878929,
+      "ratingUpper": 1416.8884433878497,
+      "votes": 154063
+    },
+    {
+      "rank": 146,
+      "name": "Mistral Large 3",
+      "organization": "mistral",
+      "license": "Apache 2.0",
+      "rating": 1414.3493437488055,
+      "ratingLower": 1411.5276423685664,
+      "ratingUpper": 1417.1710451290446,
+      "votes": 88325
+    },
+    {
+      "rank": 147,
+      "name": "Claude Opus 4 (20250514)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1414.3115280644065,
+      "ratingLower": 1409.9892628471841,
+      "ratingUpper": 1418.6337932816286,
+      "votes": 43037
+    },
+    {
+      "rank": 148,
+      "name": "Qwen3-VL-235B-A22B-Instruct",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1413.2853721915203,
+      "ratingLower": 1406.7598519639198,
+      "ratingUpper": 1419.8108924191208,
+      "votes": 11314
+    },
+    {
+      "rank": 149,
+      "name": "amazon-nova-experimental-chat (26-01-10)",
+      "organization": "amazon",
+      "license": "Proprietary",
+      "rating": 1412.7638384753411,
+      "ratingLower": 1403.087841424485,
+      "ratingUpper": 1422.439835526197,
+      "votes": 3534
+    },
+    {
+      "rank": 150,
+      "name": "NVIDIA-Nemotron-3.5-Super-VL-120B-A12B (NVFP4)",
+      "organization": "nvidia",
+      "license": "OpenMDW-1.1",
+      "rating": 1412.2733807319576,
+      "ratingLower": 1402.9063116741527,
+      "ratingUpper": 1421.6404497897624,
+      "votes": 4178
+    },
+    {
+      "rank": 151,
+      "name": "Grok 3 Preview (02-24)",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1411.213501868417,
+      "ratingLower": 1406.8664949241036,
+      "ratingUpper": 1415.5605088127306,
+      "votes": 32496
+    },
+    {
+      "rank": 152,
+      "name": "Grok 4 (0709)",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1410.9844920811329,
+      "ratingLower": 1407.0400844039464,
+      "ratingUpper": 1414.9288997583194,
+      "votes": 39678
+    },
+    {
+      "rank": 153,
+      "name": "GLM-4.5",
+      "organization": "zai",
+      "license": "MIT",
+      "rating": 1410.8815552029273,
+      "ratingLower": 1405.9591393174887,
+      "ratingUpper": 1415.8039710883659,
+      "votes": 23797
+    },
+    {
+      "rank": 154,
+      "name": "Gemini 2.5 Flash",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1409.2363064605952,
+      "ratingLower": 1406.799550403717,
+      "ratingUpper": 1411.6730625174732,
+      "votes": 125457
+    },
+    {
+      "rank": 155,
+      "name": "Qwen3.5-27B",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1408.8059895114475,
+      "ratingLower": 1404.5145110328951,
+      "ratingUpper": 1413.0974679899998,
+      "votes": 28647
+    },
+    {
+      "rank": 156,
+      "name": "Hy3 preview",
+      "organization": "tencent",
+      "license": "tencent-hunyuan-community",
+      "rating": 1408.7638953103935,
+      "ratingLower": 1401.353821759041,
+      "ratingUpper": 1416.173968861746,
+      "votes": 6869
+    },
+    {
+      "rank": 157,
+      "name": "Mistral Medium 3.1 (2508)",
+      "organization": "mistral",
+      "license": "Proprietary",
+      "rating": 1407.792840539076,
+      "ratingLower": 1405.1955195503626,
+      "ratingUpper": 1410.3901615277896,
+      "votes": 95269
+    },
+    {
+      "rank": 158,
+      "name": "Inkling-Small",
+      "organization": "thinky",
+      "license": "Apache 2.0",
+      "rating": 1405.5220424213123,
+      "ratingLower": 1401.0060741529717,
+      "ratingUpper": 1410.038010689653,
+      "votes": 36999
+    },
+    {
+      "rank": 159,
+      "name": "Grok 4 Fast (Reasoning)",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1405.2840068203932,
+      "ratingLower": 1400.2213271401115,
+      "ratingUpper": 1410.3466865006747,
+      "votes": 18270
+    },
+    {
+      "rank": 160,
+      "name": "Gemini 2.5 Flash Preview (09-2025)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1403.0401548890752,
+      "ratingLower": 1398.99052222656,
+      "ratingUpper": 1407.0897875515905,
+      "votes": 32996
+    },
+    {
+      "rank": 161,
+      "name": "o1 (2024-12-17)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1402.266295134004,
+      "ratingLower": 1397.7894232638826,
+      "ratingUpper": 1406.7431670041249,
+      "votes": 27807
+    },
+    {
+      "rank": 162,
+      "name": "Qwen3-235B-A22B (Non-Thinking)",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1402.1181988425417,
+      "ratingLower": 1397.5848644649138,
+      "ratingUpper": 1406.6515332201698,
+      "votes": 37472
+    },
+    {
+      "rank": 163,
+      "name": "Claude Sonnet 4 (Thinking 32K, 20250514)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1401.9499421124376,
+      "ratingLower": 1397.498635587006,
+      "ratingUpper": 1406.401248637869,
+      "votes": 34128
+    },
+    {
+      "rank": 164,
+      "name": "GPT-5.4 nano (High)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1401.1879805288152,
+      "ratingLower": 1397.4078768487552,
+      "ratingUpper": 1404.968084208875,
+      "votes": 62314
+    },
+    {
+      "rank": 165,
+      "name": "LongCat-Flash-Chat",
+      "organization": "meituan",
+      "license": "MIT",
+      "rating": 1400.7747426806043,
+      "ratingLower": 1394.3573572214555,
+      "ratingUpper": 1407.192128139753,
+      "votes": 11167
+    },
+    {
+      "rank": 166,
+      "name": "Qwen3-235B-A22B-Thinking (2507)",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1400.0552207558453,
+      "ratingLower": 1393.481533362547,
+      "ratingUpper": 1406.6289081491436,
+      "votes": 8822
+    },
+    {
+      "rank": 167,
+      "name": "Qwen3-Next-80B-A3B-Instruct",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1398.5126580803847,
+      "ratingLower": 1393.7375623086398,
+      "ratingUpper": 1403.2877538521295,
+      "votes": 22753
+    },
+    {
+      "rank": 168,
+      "name": "DeepSeek-R1",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1398.080587663513,
+      "ratingLower": 1393.1837812359174,
+      "ratingUpper": 1402.9773940911084,
+      "votes": 18524
+    },
+    {
+      "rank": 169,
+      "name": "Qwen3.5-Flash",
+      "organization": "alibaba",
+      "license": "Proprietary",
+      "rating": 1395.9965725159343,
+      "ratingLower": 1392.3332809712947,
+      "ratingUpper": 1399.6598640605741,
+      "votes": 61776
+    },
+    {
+      "rank": 170,
+      "name": "DeepSeek-V3 (0324)",
+      "organization": "deepseek",
+      "license": "MIT",
+      "rating": 1395.2354410909052,
+      "ratingLower": 1391.342364311061,
+      "ratingUpper": 1399.1285178707494,
+      "votes": 44977
+    },
+    {
+      "rank": 171,
+      "name": "Qwen3-VL-235B-A22B-Thinking",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1394.7145461419366,
+      "ratingLower": 1387.8867175047699,
+      "ratingUpper": 1401.5423747791033,
+      "votes": 7862
+    },
+    {
+      "rank": 172,
+      "name": "Hunyuan Vision 1.5 Thinking",
+      "organization": "tencent",
+      "license": "Proprietary",
+      "rating": 1394.070519876001,
+      "ratingLower": 1381.6590741835064,
+      "ratingUpper": 1406.4819655684958,
+      "votes": 2169
+    },
+    {
+      "rank": 173,
+      "name": "Qwen3.5-35B-A3B",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1393.8308645238358,
+      "ratingLower": 1389.5993091082055,
+      "ratingUpper": 1398.062419939466,
+      "votes": 30427
+    },
+    {
+      "rank": 174,
+      "name": "Step-3.5-Flash",
+      "organization": "stepfun",
+      "license": "Apache 2.0",
+      "rating": 1393.0117613447628,
+      "ratingLower": 1389.460321715114,
+      "ratingUpper": 1396.5632009744115,
+      "votes": 60305
+    },
+    {
+      "rank": 175,
+      "name": "amazon-nova-experimental-chat (12-10)",
+      "organization": "amazon",
+      "license": "Proprietary",
+      "rating": 1392.9053874040198,
+      "ratingLower": 1383.4358970405362,
+      "ratingUpper": 1402.3748777675034,
+      "votes": 3734
+    },
+    {
+      "rank": 176,
+      "name": "MiMo-V2-Flash (Non-Thinking)",
+      "organization": "xiaomi",
+      "license": "MIT",
+      "rating": 1391.51125051484,
+      "ratingLower": 1388.0286714222968,
+      "ratingUpper": 1394.9938296073833,
+      "votes": 48060
+    },
+    {
+      "rank": 177,
+      "name": "o4-mini (2025-04-16)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1390.9524766008885,
+      "ratingLower": 1386.9594396654193,
+      "ratingUpper": 1394.9455135363578,
+      "votes": 44843
+    },
+    {
+      "rank": 178,
+      "name": "Claude Sonnet 4 (20250514)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1390.9278509587512,
+      "ratingLower": 1386.532604241729,
+      "ratingUpper": 1395.3230976757736,
+      "votes": 39168
+    },
+    {
+      "rank": 179,
+      "name": "MiniMax-M2.5",
+      "organization": "minimax",
+      "license": "Modified MIT",
+      "rating": 1390.6240740058358,
+      "ratingLower": 1386.735628699261,
+      "ratingUpper": 1394.5125193124109,
+      "votes": 42783
+    },
+    {
+      "rank": 180,
+      "name": "GPT-5 mini (High)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1389.8331635529037,
+      "ratingLower": 1385.185046739177,
+      "ratingUpper": 1394.4812803666302,
+      "votes": 26793
+    },
+    {
+      "rank": 181,
+      "name": "o1-preview",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1388.5696880091418,
+      "ratingLower": 1383.5588650791244,
+      "ratingUpper": 1393.5805109391592,
+      "votes": 31122
+    },
+    {
+      "rank": 182,
+      "name": "Claude 3.7 Sonnet (Thinking 32K, 20250219)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1388.256328392797,
+      "ratingLower": 1384.0521815420414,
+      "ratingUpper": 1392.4604752435525,
+      "votes": 38156
+    },
+    {
+      "rank": 183,
+      "name": "Solar Pro 4",
+      "organization": "upstage",
+      "license": "Proprietary",
+      "rating": 1387.827681317688,
+      "ratingLower": 1382.7845456681935,
+      "ratingUpper": 1392.8708169671827,
+      "votes": 26159
+    },
+    {
+      "rank": 184,
+      "name": "Qwen3-Coder-480B-A35B-Instruct",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1387.5689762239963,
+      "ratingLower": 1382.5911540886063,
+      "ratingUpper": 1392.5467983593862,
+      "votes": 25190
+    },
+    {
+      "rank": 185,
+      "name": "Hunyuan T1 (20250711)",
+      "organization": "tencent",
+      "license": "Proprietary",
+      "rating": 1387.269262043637,
+      "ratingLower": 1378.5634001210465,
+      "ratingUpper": 1395.9751239662273,
+      "votes": 4595
+    },
+    {
+      "rank": 186,
+      "name": "Mistral Medium 3 (2505)",
+      "organization": "mistral",
+      "license": "Proprietary",
+      "rating": 1387.2563889432622,
+      "ratingLower": 1382.5358452498517,
+      "ratingUpper": 1391.976932636673,
+      "votes": 32777
+    },
+    {
+      "rank": 187,
+      "name": "MiMo-V2-Flash (Thinking)",
+      "organization": "xiaomi",
+      "license": "MIT",
+      "rating": 1386.108979493863,
+      "ratingLower": 1379.9384795278754,
+      "ratingUpper": 1392.2794794598506,
+      "votes": 11135
+    },
+    {
+      "rank": 188,
+      "name": "MiniMax-M2.1 Preview",
+      "organization": "minimax",
+      "license": "MIT",
+      "rating": 1384.5404176134368,
+      "ratingLower": 1379.3616398034726,
+      "ratingUpper": 1389.7191954234008,
+      "votes": 17222
+    },
+    {
+      "rank": 189,
+      "name": "Hunyuan TurboS (20250416)",
+      "organization": "tencent",
+      "license": "Proprietary",
+      "rating": 1383.0901954164292,
+      "ratingLower": 1376.5942607244685,
+      "ratingUpper": 1389.58613010839,
+      "votes": 10623
+    },
+    {
+      "rank": 190,
+      "name": "GPT-4.1 mini (2025-04-14)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1382.8118632617288,
+      "ratingLower": 1378.47691019972,
+      "ratingUpper": 1387.1468163237375,
+      "votes": 38696
+    },
+    {
+      "rank": 191,
+      "name": "Qwen3-30B-A3B-Instruct (2507)",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1382.3100157427323,
+      "ratingLower": 1377.4032846838047,
+      "ratingUpper": 1387.2167468016598,
+      "votes": 23312
+    },
+    {
+      "rank": 192,
+      "name": "Gemini 2.5 Flash-Lite Preview (Non-Thinking, 09-2025)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1379.395130083995,
+      "ratingLower": 1375.9735493211635,
+      "ratingUpper": 1382.8167108468263,
+      "votes": 47418
+    },
+    {
+      "rank": 193,
+      "name": "Trinity Large Preview",
+      "organization": "",
+      "license": "Apache 2.0",
+      "rating": 1378.5294609250745,
+      "ratingLower": 1374.2703978323736,
+      "ratingUpper": 1382.7885240177754,
+      "votes": 31233
+    },
+    {
+      "rank": 194,
+      "name": "GLM-4.6V",
+      "organization": "zai",
+      "license": "MIT",
+      "rating": 1378.361364827881,
+      "ratingLower": 1367.1829703186202,
+      "ratingUpper": 1389.539759337142,
+      "votes": 2833
+    },
+    {
+      "rank": 195,
+      "name": "Qwen3-235B-A22B",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1374.8547027644152,
+      "ratingLower": 1370.1450387408925,
+      "ratingUpper": 1379.564366787938,
+      "votes": 25950
+    },
+    {
+      "rank": 196,
+      "name": "Gemini 2.5 Flash-Lite Preview (Thinking, 06-17)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1374.6962904414806,
+      "ratingLower": 1370.1730090288986,
+      "ratingUpper": 1379.2195718540627,
+      "votes": 32381
+    },
+    {
+      "rank": 197,
+      "name": "Claude 3.5 Sonnet (20241022)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1374.279869851107,
+      "ratingLower": 1371.0721151550513,
+      "ratingUpper": 1377.4876245471628,
+      "votes": 87771
+    },
+    {
+      "rank": 198,
+      "name": "Qwen2.5-Max",
+      "organization": "alibaba",
+      "license": "Proprietary",
+      "rating": 1373.7679263429802,
+      "ratingLower": 1369.6516091191047,
+      "ratingUpper": 1377.8842435668555,
+      "votes": 32487
+    },
+    {
+      "rank": 199,
+      "name": "GLM-4.5-Air",
+      "organization": "zai",
+      "license": "MIT",
+      "rating": 1373.0212704473938,
+      "ratingLower": 1368.766905180501,
+      "ratingUpper": 1377.2756357142866,
+      "votes": 30652
+    },
+    {
+      "rank": 200,
+      "name": "Claude 3.7 Sonnet (20250219)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1372.4704873949158,
+      "ratingLower": 1368.5043576494272,
+      "ratingUpper": 1376.4366171404045,
+      "votes": 42573
+    },
+    {
+      "rank": 201,
+      "name": "Qwen3-Next-80B-A3B-Thinking",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1369.190896693711,
+      "ratingLower": 1363.3274745821657,
+      "ratingUpper": 1375.0543188052561,
+      "votes": 13476
+    },
+    {
+      "rank": 202,
+      "name": "Trinity Large Thinking",
+      "organization": "",
+      "license": "Apache 2.0",
+      "rating": 1367.484533248672,
+      "ratingLower": 1362.8914325955773,
+      "ratingUpper": 1372.0776339017666,
+      "votes": 30290
+    },
+    {
+      "rank": 203,
+      "name": "Gemma 3 27B IT",
+      "organization": "google",
+      "license": "Gemma",
+      "rating": 1365.3225638857502,
+      "ratingLower": 1361.618233039994,
+      "ratingUpper": 1369.0268947315064,
+      "votes": 46670
+    },
+    {
+      "rank": 204,
+      "name": "GLM-4.7-Flash",
+      "organization": "zai",
+      "license": "MIT",
+      "rating": 1364.7074533823684,
+      "ratingLower": 1358.9936224558696,
+      "ratingUpper": 1370.4212843088671,
+      "votes": 12008
+    },
+    {
+      "rank": 205,
+      "name": "MiniMax-M1",
+      "organization": "minimax",
+      "license": "Apache 2.0",
+      "rating": 1363.8154806791001,
+      "ratingLower": 1359.5215853172438,
+      "ratingUpper": 1368.1093760409565,
+      "votes": 34293
+    },
+    {
+      "rank": 206,
+      "name": "amazon-nova-experimental-chat (11-10)",
+      "organization": "amazon",
+      "license": "Proprietary",
+      "rating": 1363.8103937504475,
+      "ratingLower": 1359.5330242667544,
+      "ratingUpper": 1368.0877632341405,
+      "votes": 26026
+    },
+    {
+      "rank": 207,
+      "name": "Grok 3 Mini (High)",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1363.702042421401,
+      "ratingLower": 1358.228370295718,
+      "ratingUpper": 1369.1757145470845,
+      "votes": 15595
+    },
+    {
+      "rank": 208,
+      "name": "o3-mini (High)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1363.5601303290898,
+      "ratingLower": 1358.2920962821656,
+      "ratingUpper": 1368.8281643760138,
+      "votes": 18589
+    },
+    {
+      "rank": 209,
+      "name": "Gemini 2.0 Flash (001)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1359.9661010290843,
+      "ratingLower": 1356.1595380587244,
+      "ratingUpper": 1363.7726639994444,
+      "votes": 43443
+    },
+    {
+      "rank": 210,
+      "name": "NVIDIA-Nemotron-3-Super-120B-A12B",
+      "organization": "nvidia",
+      "license": "NVIDIA Open Model",
+      "rating": 1359.925020971075,
+      "ratingLower": 1352.801733461306,
+      "ratingUpper": 1367.0483084808438,
+      "votes": 7870
+    },
+    {
+      "rank": 211,
+      "name": "DeepSeek-V3",
+      "organization": "deepseek",
+      "license": "DeepSeek",
+      "rating": 1358.417411555032,
+      "ratingLower": 1353.6580469153128,
+      "ratingUpper": 1363.1767761947513,
+      "votes": 21770
+    },
+    {
+      "rank": 212,
+      "name": "Grok 3 Mini Beta",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1357.8924726390599,
+      "ratingLower": 1352.75667275221,
+      "ratingUpper": 1363.0282725259094,
+      "votes": 20930
+    },
+    {
+      "rank": 213,
+      "name": "Mistral Small 3.2 (2506)",
+      "organization": "mistral",
+      "license": "Apache 2.0",
+      "rating": 1356.1713363689948,
+      "ratingLower": 1350.947213695715,
+      "ratingUpper": 1361.395459042275,
+      "votes": 17462
+    },
+    {
+      "rank": 214,
+      "name": "INTELLECT-3",
+      "organization": "",
+      "license": "MIT",
+      "rating": 1355.5061999178486,
+      "ratingLower": 1347.2561490622677,
+      "ratingUpper": 1363.7562507734294,
+      "votes": 5435
+    },
+    {
+      "rank": 215,
+      "name": "Command A (03-2025)",
+      "organization": "cohere",
+      "license": "CC-BY-NC-4.0",
+      "rating": 1353.6548875344524,
+      "ratingLower": 1350.1829551485564,
+      "ratingUpper": 1357.1268199203485,
+      "votes": 55763
+    },
+    {
+      "rank": 216,
+      "name": "Gemini 2.0 Flash-Lite Preview (02-05)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1353.543449055829,
+      "ratingLower": 1349.217739330093,
+      "ratingUpper": 1357.8691587815647,
+      "votes": 24955
+    },
+    {
+      "rank": 217,
+      "name": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B (NVFP4)",
+      "organization": "nvidia",
+      "license": "OpenMDW-1.1",
+      "rating": 1353.3100305191408,
+      "ratingLower": 1348.0008258030741,
+      "ratingUpper": 1358.6192352352075,
+      "votes": 24230
+    },
+    {
+      "rank": 218,
+      "name": "GLM-4.5V",
+      "organization": "zai",
+      "license": "MIT",
+      "rating": 1352.1490717774159,
+      "ratingLower": 1343.705436881968,
+      "ratingUpper": 1360.5927066728639,
+      "votes": 4817
+    },
+    {
+      "rank": 219,
+      "name": "gpt-oss-120b",
+      "organization": "openai",
+      "license": "Apache 2.0",
+      "rating": 1351.7369452850648,
+      "ratingLower": 1347.3711381707524,
+      "ratingUpper": 1356.1027523993773,
+      "votes": 30200
+    },
+    {
+      "rank": 220,
+      "name": "Gemini 1.5 Pro (002)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1351.3002286729231,
+      "ratingLower": 1347.8962296654317,
+      "ratingUpper": 1354.7042276804145,
+      "votes": 55606
+    },
+    {
+      "rank": 221,
+      "name": "Step-3",
+      "organization": "stepfun",
+      "license": "Apache 2.0",
+      "rating": 1349.0344499650298,
+      "ratingLower": 1341.5209129777102,
+      "ratingUpper": 1356.5479869523494,
+      "votes": 6291
+    },
+    {
+      "rank": 222,
+      "name": "Hunyuan TurboS (20250226)",
+      "organization": "tencent",
+      "license": "Proprietary",
+      "rating": 1348.8360365520139,
+      "ratingLower": 1337.1317289574947,
+      "ratingUpper": 1360.5403441465332,
+      "votes": 2220
+    },
+    {
+      "rank": 223,
+      "name": "amazon-nova-experimental-chat (10-20)",
+      "organization": "amazon",
+      "license": "Proprietary",
+      "rating": 1348.1977455872589,
+      "ratingLower": 1342.057456933396,
+      "ratingUpper": 1354.3380342411215,
+      "votes": 11625
+    },
+    {
+      "rank": 224,
+      "name": "o3-mini",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1348.057275082372,
+      "ratingLower": 1344.5007521010077,
+      "ratingUpper": 1351.613798063736,
+      "votes": 56735
+    },
+    {
+      "rank": 225,
+      "name": "Llama 3.1 Nemotron Ultra 253B v1",
+      "organization": "nvidia",
+      "license": "Nvidia Open Model",
+      "rating": 1347.5732366033135,
+      "ratingLower": 1335.8965198262813,
+      "ratingUpper": 1359.2499533803457,
+      "votes": 2549
+    },
+    {
+      "rank": 226,
+      "name": "Qwen3-32B",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1346.8185340713344,
+      "ratingLower": 1337.3619166934348,
+      "ratingUpper": 1356.275151449234,
+      "votes": 3926
+    },
+    {
+      "rank": 227,
+      "name": "amazon-nova-experimental-chat (10-09)",
+      "organization": "amazon",
+      "license": "Proprietary",
+      "rating": 1346.1995159537062,
+      "ratingLower": 1335.2675434670148,
+      "ratingUpper": 1357.1314884403976,
+      "votes": 2781
+    },
+    {
+      "rank": 228,
+      "name": "GPT-4o (2024-05-13)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1346.1230144208841,
+      "ratingLower": 1342.6564029631618,
+      "ratingUpper": 1349.5896258786065,
+      "votes": 112881
+    },
+    {
+      "rank": 229,
+      "name": "Qwen-Plus (0125)",
+      "organization": "alibaba",
+      "license": "Proprietary",
+      "rating": 1345.8928057942335,
+      "ratingLower": 1337.5615780115977,
+      "ratingUpper": 1354.2240335768695,
+      "votes": 5819
+    },
+    {
+      "rank": 230,
+      "name": "MiniMax-M2",
+      "organization": "minimax",
+      "license": "Apache 2.0",
+      "rating": 1343.538298460273,
+      "ratingLower": 1335.7940980000167,
+      "ratingUpper": 1351.282498920529,
+      "votes": 6850
+    },
+    {
+      "rank": 231,
+      "name": "Claude 3.5 Sonnet (20240620)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1343.2825604985546,
+      "ratingLower": 1339.8384399289932,
+      "ratingUpper": 1346.726681068116,
+      "votes": 82419
+    },
+    {
+      "rank": 232,
+      "name": "Ling-flash-2.0",
+      "organization": "ant-group",
+      "license": "MIT",
+      "rating": 1343.2694900235108,
+      "ratingLower": 1335.9901580444298,
+      "ratingUpper": 1350.5488220025916,
+      "votes": 6952
+    },
+    {
+      "rank": 233,
+      "name": "Llama 3.3 Nemotron Super 49B v1.5",
+      "organization": "nvidia",
+      "license": "Nvidia Open",
+      "rating": 1343.066366344299,
+      "ratingLower": 1333.072947102339,
+      "ratingUpper": 1353.059785586259,
+      "votes": 3327
+    },
+    {
+      "rank": 234,
+      "name": "Mercury 2",
+      "organization": "inception-ai",
+      "license": "Proprietary",
+      "rating": 1342.8219833437906,
+      "ratingLower": 1332.291787553608,
+      "ratingUpper": 1353.3521791339736,
+      "votes": 3191
+    },
+    {
+      "rank": 235,
+      "name": "GLM-4-Plus (0111)",
+      "organization": "zai",
+      "license": "Proprietary",
+      "rating": 1342.7170171090027,
+      "ratingLower": 1334.3009619195957,
+      "ratingUpper": 1351.1330722984096,
+      "votes": 5760
+    },
+    {
+      "rank": 236,
+      "name": "Gemma 3 12B IT",
+      "organization": "google",
+      "license": "Gemma",
+      "rating": 1341.7430138024324,
+      "ratingLower": 1332.2320323061992,
+      "ratingUpper": 1351.2539952986656,
+      "votes": 3829
+    },
+    {
+      "rank": 237,
+      "name": "Hunyuan Turbo (0110)",
+      "organization": "tencent",
+      "license": "Proprietary",
+      "rating": 1340.6605801010605,
+      "ratingLower": 1329.1448826008464,
+      "ratingUpper": 1352.1762776012747,
+      "votes": 2290
+    },
+    {
+      "rank": 238,
+      "name": "Granite 4.2 30B",
+      "organization": "ibm",
+      "license": "Apache 2.0",
+      "rating": 1340.1157179012794,
+      "ratingLower": 1329.6263377340624,
+      "ratingUpper": 1350.6050980684965,
+      "votes": 3389
+    },
+    {
+      "rank": 239,
+      "name": "GPT-5 nano (High)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1337.653229736218,
+      "ratingLower": 1330.733045907527,
+      "ratingUpper": 1344.573413564909,
+      "votes": 8134
+    },
+    {
+      "rank": 240,
+      "name": "o1-mini",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1336.8111805221968,
+      "ratingLower": 1333.145875744526,
+      "ratingUpper": 1340.4764852998676,
+      "votes": 51981
+    },
+    {
+      "rank": 241,
+      "name": "Gemini Advanced (0514)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1335.9664121315973,
+      "ratingLower": 1330.8132357876384,
+      "ratingUpper": 1341.119588475556,
+      "votes": 50148
+    },
+    {
+      "rank": 242,
+      "name": "Grok 2 (2024-08-13)",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1335.6546553293144,
+      "ratingLower": 1331.9606649016562,
+      "ratingUpper": 1339.3486457569727,
+      "votes": 63498
+    },
+    {
+      "rank": 243,
+      "name": "GPT-4o (2024-08-06)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1335.5879457813603,
+      "ratingLower": 1331.3736848436422,
+      "ratingUpper": 1339.8022067190784,
+      "votes": 45499
+    },
+    {
+      "rank": 244,
+      "name": "QwQ-32B",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1335.5782990500757,
+      "ratingLower": 1331.116047045009,
+      "ratingUpper": 1340.0405510551425,
+      "votes": 25177
+    },
+    {
+      "rank": 245,
+      "name": "Llama 3.1 405B Instruct (BF16)",
+      "organization": "meta",
+      "license": "Llama 3.1 Community",
+      "rating": 1335.4503003688465,
+      "ratingLower": 1331.7177215802474,
+      "ratingUpper": 1339.1828791574453,
+      "votes": 41375
+    },
+    {
+      "rank": 246,
+      "name": "Amazon Nova 2 Lite",
+      "organization": "amazon",
+      "license": "Proprietary",
+      "rating": 1334.9557348574306,
+      "ratingLower": 1328.8747169602386,
+      "ratingUpper": 1341.0367527546225,
+      "votes": 12415
+    },
+    {
+      "rank": 247,
+      "name": "Llama 3.1 405B Instruct (FP8)",
+      "organization": "meta",
+      "license": "Llama 3.1 Community",
+      "rating": 1333.603555396654,
+      "ratingLower": 1329.997718329989,
+      "ratingUpper": 1337.2093924633189,
+      "votes": 59656
+    },
+    {
+      "rank": 248,
+      "name": "Step-2 16K Exp (202412)",
+      "organization": "stepfun",
+      "license": "Proprietary",
+      "rating": 1333.5103329605172,
+      "ratingLower": 1324.9247297670001,
+      "ratingUpper": 1342.0959361540342,
+      "votes": 4833
+    },
+    {
+      "rank": 249,
+      "name": "Olmo 3.1 32B Instruct",
+      "organization": "allenai",
+      "license": "Apache 2.0",
+      "rating": 1329.3227727944718,
+      "ratingLower": 1323.1810705419828,
+      "ratingUpper": 1335.4644750469608,
+      "votes": 11805
+    },
+    {
+      "rank": 250,
+      "name": "Yi Lightning",
+      "organization": "",
+      "license": "Proprietary",
+      "rating": 1328.2764405853727,
+      "ratingLower": 1323.3317299581947,
+      "ratingUpper": 1333.2211512125505,
+      "votes": 27332
+    },
+    {
+      "rank": 251,
+      "name": "Llama 3.3 Nemotron Super 49B v1",
+      "organization": "nvidia",
+      "license": "Nvidia",
+      "rating": 1327.73553708866,
+      "ratingLower": 1315.6055624666265,
+      "ratingUpper": 1339.865511710694,
+      "votes": 2218
+    },
+    {
+      "rank": 252,
+      "name": "Llama 4 Maverick 17B 128E Instruct",
+      "organization": "meta",
+      "license": "Llama 4",
+      "rating": 1326.9630686578691,
+      "ratingLower": 1322.6829092384378,
+      "ratingUpper": 1331.2432280773007,
+      "votes": 39439
+    },
+    {
+      "rank": 253,
+      "name": "Qwen3-30B-A3B",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1326.7009988994841,
+      "ratingLower": 1321.9520623992655,
+      "ratingUpper": 1331.4499353997028,
+      "votes": 26156
+    },
+    {
+      "rank": 254,
+      "name": "Hunyuan Large (2025-02-10)",
+      "organization": "tencent",
+      "license": "Proprietary",
+      "rating": 1326.328495375679,
+      "ratingLower": 1316.6027667754738,
+      "ratingUpper": 1336.054223975884,
+      "votes": 3738
+    },
+    {
+      "rank": 255,
+      "name": "Claude 3.5 Haiku (20241022)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1324.764024121859,
+      "ratingLower": 1321.5000484101083,
+      "ratingUpper": 1328.0279998336096,
+      "votes": 69056
+    },
+    {
+      "rank": 256,
+      "name": "GPT-4 Turbo (2024-04-09)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1324.5036977943262,
+      "ratingLower": 1320.5768415510943,
+      "ratingUpper": 1328.4305540375578,
+      "votes": 98114
+    },
+    {
+      "rank": 257,
+      "name": "Gemini 1.5 Pro (001)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1324.0593274689231,
+      "ratingLower": 1320.0731754564522,
+      "ratingUpper": 1328.045479481394,
+      "votes": 79138
+    },
+    {
+      "rank": 258,
+      "name": "DeepSeek-V2.5 (1210)",
+      "organization": "deepseek",
+      "license": "DeepSeek",
+      "rating": 1323.3808730923536,
+      "ratingLower": 1315.1084347033027,
+      "ratingUpper": 1331.6533114814047,
+      "votes": 6795
+    },
+    {
+      "rank": 259,
+      "name": "Ring-flash-2.0",
+      "organization": "ant-group",
+      "license": "MIT",
+      "rating": 1322.3633097969548,
+      "ratingLower": 1315.0867808094406,
+      "ratingUpper": 1329.6398387844692,
+      "votes": 6987
+    },
+    {
+      "rank": 260,
+      "name": "GPT-4.1 nano (2025-04-14)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1322.2640332035085,
+      "ratingLower": 1314.5339713835367,
+      "ratingUpper": 1329.9940950234802,
+      "votes": 6103
+    },
+    {
+      "rank": 261,
+      "name": "Claude 3 Opus (20240229)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1322.2396732701075,
+      "ratingLower": 1319.165817410492,
+      "ratingUpper": 1325.3135291297228,
+      "votes": 194909
+    },
+    {
+      "rank": 262,
+      "name": "Llama 4 Scout 17B 16E Instruct",
+      "organization": "meta",
+      "license": "Llama",
+      "rating": 1321.4453655056352,
+      "ratingLower": 1316.7067148013236,
+      "ratingUpper": 1326.1840162099468,
+      "votes": 29823
+    },
+    {
+      "rank": 263,
+      "name": "Molmo 2 8B",
+      "organization": "allenai",
+      "license": "Apache 2.0",
+      "rating": 1321.3524482314865,
+      "ratingLower": 1300.2446655833971,
+      "ratingUpper": 1342.4602308795759,
+      "votes": 822
+    },
+    {
+      "rank": 264,
+      "name": "Step-1o Turbo (202506)",
+      "organization": "stepfun",
+      "license": "Proprietary",
+      "rating": 1319.7552335124635,
+      "ratingLower": 1312.8823337681463,
+      "ratingUpper": 1326.6281332567805,
+      "votes": 8906
+    },
+    {
+      "rank": 265,
+      "name": "GLM-4-Plus",
+      "organization": "zai",
+      "license": "Proprietary",
+      "rating": 1319.366380242177,
+      "ratingLower": 1314.432832686619,
+      "ratingUpper": 1324.2999277977349,
+      "votes": 26126
+    },
+    {
+      "rank": 266,
+      "name": "Qwen-Max (0919)",
+      "organization": "alibaba",
+      "license": "Qwen",
+      "rating": 1318.1147389261812,
+      "ratingLower": 1312.4116527671767,
+      "ratingUpper": 1323.8178250851854,
+      "votes": 16478
+    },
+    {
+      "rank": 267,
+      "name": "Llama 3.3 70B Instruct",
+      "organization": "meta",
+      "license": "Llama-3.3",
+      "rating": 1318.0451629336942,
+      "ratingLower": 1314.5395107757654,
+      "ratingUpper": 1321.550815091623,
+      "votes": 54493
+    },
+    {
+      "rank": 268,
+      "name": "GPT-4o mini (2024-07-18)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1317.5942109966522,
+      "ratingLower": 1314.043379108479,
+      "ratingUpper": 1321.1450428848257,
+      "votes": 68705
+    },
+    {
+      "rank": 269,
+      "name": "Gemma 3n E4B IT",
+      "organization": "google",
+      "license": "Gemma",
+      "rating": 1317.537655024212,
+      "ratingLower": 1312.3552480721385,
+      "ratingUpper": 1322.7200619762857,
+      "votes": 22136
+    },
+    {
+      "rank": 270,
+      "name": "gpt-oss-20b",
+      "organization": "openai",
+      "license": "Apache 2.0",
+      "rating": 1317.3070244555993,
+      "ratingLower": 1310.890637408463,
+      "ratingUpper": 1323.7234115027359,
+      "votes": 10416
+    },
+    {
+      "rank": 271,
+      "name": "Qwen2.5-Plus (1127)",
+      "organization": "alibaba",
+      "license": "Proprietary",
+      "rating": 1314.609826134419,
+      "ratingLower": 1308.2511825003548,
+      "ratingUpper": 1320.9684697684831,
+      "votes": 10187
+    },
+    {
+      "rank": 272,
+      "name": "Mistral Large 2 (2407)",
+      "organization": "mistral",
+      "license": "Mistral Research",
+      "rating": 1314.4314755207688,
+      "ratingLower": 1310.4971129065918,
+      "ratingUpper": 1318.3658381349458,
+      "votes": 45459
+    },
+    {
+      "rank": 273,
+      "name": "Athene V2 Chat",
+      "organization": "",
+      "license": "NexusFlow",
+      "rating": 1314.1343621041765,
+      "ratingLower": 1309.566680959929,
+      "ratingUpper": 1318.7020432484242,
+      "votes": 24739
+    },
+    {
+      "rank": 274,
+      "name": "NVIDIA-Nemotron-3-Nano-30B-A3B (BF16)",
+      "organization": "nvidia",
+      "license": "NVIDIA Open Model",
+      "rating": 1313.6072580646069,
+      "ratingLower": 1308.1283095235904,
+      "ratingUpper": 1319.0862066056236,
+      "votes": 15761
+    },
+    {
+      "rank": 275,
+      "name": "GPT-4 Turbo Preview (0125)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1313.2533393214758,
+      "ratingLower": 1309.16833950756,
+      "ratingUpper": 1317.3383391353918,
+      "votes": 93439
+    },
+    {
+      "rank": 276,
+      "name": "GPT-4 Turbo Preview (1106)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1312.9062710295584,
+      "ratingLower": 1309.0168230084469,
+      "ratingUpper": 1316.79571905067,
+      "votes": 100105
+    },
+    {
+      "rank": 277,
+      "name": "Hunyuan Standard (2025-02-10)",
+      "organization": "tencent",
+      "license": "Proprietary",
+      "rating": 1311.27187315387,
+      "ratingLower": 1301.608495651997,
+      "ratingUpper": 1320.935250655743,
+      "votes": 3904
+    },
+    {
+      "rank": 278,
+      "name": "Gemini 1.5 Flash (002)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1309.2717618453994,
+      "ratingLower": 1305.0396890260051,
+      "ratingUpper": 1313.5038346647939,
+      "votes": 34902
+    },
+    {
+      "rank": 279,
+      "name": "Grok 2 mini (2024-08-13)",
+      "organization": "xai",
+      "license": "Proprietary",
+      "rating": 1308.3930699803993,
+      "ratingLower": 1304.6585140438938,
+      "ratingUpper": 1312.127625916905,
+      "votes": 52567
+    },
+    {
+      "rank": 280,
+      "name": "DeepSeek-V2.5",
+      "organization": "deepseek",
+      "license": "DeepSeek",
+      "rating": 1307.1848558620359,
+      "ratingLower": 1302.4713850346582,
+      "ratingUpper": 1311.8983266894136,
+      "votes": 24572
+    },
+    {
+      "rank": 281,
+      "name": "Athene 70B (0725)",
+      "organization": "",
+      "license": "CC-BY-NC-4.0",
+      "rating": 1306.6298720496027,
+      "ratingLower": 1300.9553282038385,
+      "ratingUpper": 1312.304415895367,
+      "votes": 19621
+    },
+    {
+      "rank": 282,
+      "name": "Olmo 3 32B Think",
+      "organization": "allenai",
+      "license": "Apache 2.0",
+      "rating": 1305.946085201527,
+      "ratingLower": 1297.6993124352693,
+      "ratingUpper": 1314.1928579677847,
+      "votes": 5827
+    },
+    {
+      "rank": 283,
+      "name": "Mercury",
+      "organization": "inception-ai",
+      "license": "Proprietary",
+      "rating": 1305.6630609861613,
+      "ratingLower": 1291.8968260358115,
+      "ratingUpper": 1319.4292959365114,
+      "votes": 1966
+    },
+    {
+      "rank": 284,
+      "name": "Mistral Large (2411)",
+      "organization": "mistral",
+      "license": "MRL",
+      "rating": 1305.559010280563,
+      "ratingLower": 1301.1016622707966,
+      "ratingUpper": 1310.0163582903292,
+      "votes": 28073
+    },
+    {
+      "rank": 285,
+      "name": "Magistral Medium (2506)",
+      "organization": "mistral",
+      "license": "Proprietary",
+      "rating": 1304.8218519565294,
+      "ratingLower": 1298.372244327594,
+      "ratingUpper": 1311.271459585465,
+      "votes": 11513
+    },
+    {
+      "rank": 286,
+      "name": "Granite 4.1 8B",
+      "organization": "ibm",
+      "license": "Apache 2.0",
+      "rating": 1303.9633856960327,
+      "ratingLower": 1293.963241355632,
+      "ratingUpper": 1313.9635300364334,
+      "votes": 4177
+    },
+    {
+      "rank": 287,
+      "name": "Gemma 3 4B IT",
+      "organization": "google",
+      "license": "Gemma",
+      "rating": 1303.230289696199,
+      "ratingLower": 1293.9137506892964,
+      "ratingUpper": 1312.5468287031015,
+      "votes": 4171
+    },
+    {
+      "rank": 288,
+      "name": "Qwen2.5-72B-Instruct",
+      "organization": "alibaba",
+      "license": "Qwen",
+      "rating": 1302.864264374245,
+      "ratingLower": 1298.7752822299333,
+      "ratingUpper": 1306.9532465185569,
+      "votes": 39406
+    },
+    {
+      "rank": 289,
+      "name": "Mistral Small 3.1 24B Instruct (2503)",
+      "organization": "mistral",
+      "license": "Apache 2.0",
+      "rating": 1302.5929026652675,
+      "ratingLower": 1298.047388728225,
+      "ratingUpper": 1307.1384166023101,
+      "votes": 32722
+    },
+    {
+      "rank": 290,
+      "name": "Llama 3.1 Nemotron 70B Instruct",
+      "organization": "nvidia",
+      "license": "Llama 3.1",
+      "rating": 1298.7318399552216,
+      "ratingLower": 1290.9702373426517,
+      "ratingUpper": 1306.4934425677916,
+      "votes": 7140
+    },
+    {
+      "rank": 291,
+      "name": "Hunyuan Large Vision",
+      "organization": "tencent",
+      "license": "Proprietary",
+      "rating": 1293.7338876120805,
+      "ratingLower": 1284.5879498278507,
+      "ratingUpper": 1302.8798253963103,
+      "votes": 5279
+    },
+    {
+      "rank": 292,
+      "name": "Llama 3.1 70B Instruct",
+      "organization": "meta",
+      "license": "Llama 3.1 Community",
+      "rating": 1293.3522895226931,
+      "ratingLower": 1289.6040981884157,
+      "ratingUpper": 1297.1004808569705,
+      "votes": 55240
+    },
+    {
+      "rank": 293,
+      "name": "Amazon Nova Pro 1.0",
+      "organization": "amazon",
+      "license": "Proprietary",
+      "rating": 1290.0948917961784,
+      "ratingLower": 1285.5067134285937,
+      "ratingUpper": 1294.6830701637632,
+      "votes": 24745
+    },
+    {
+      "rank": 294,
+      "name": "Granite 4.2 3B",
+      "organization": "ibm",
+      "license": "Apache 2.0",
+      "rating": 1289.9991913332158,
+      "ratingLower": 1278.4001300600014,
+      "ratingUpper": 1301.5982526064304,
+      "votes": 3249
+    },
+    {
+      "rank": 295,
+      "name": "Granite 4.2 8B",
+      "organization": "ibm",
+      "license": "Apache 2.0",
+      "rating": 1289.6837569902323,
+      "ratingLower": 1278.4983333225575,
+      "ratingUpper": 1300.8691806579068,
+      "votes": 3251
+    },
+    {
+      "rank": 296,
+      "name": "Gemma 2 27B IT",
+      "organization": "google",
+      "license": "Gemma license",
+      "rating": 1289.4873536871232,
+      "ratingLower": 1286.0898177962474,
+      "ratingUpper": 1292.8848895779993,
+      "votes": 75754
+    },
+    {
+      "rank": 297,
+      "name": "Jamba 1.5 Large",
+      "organization": "",
+      "license": "Jamba Open",
+      "rating": 1289.4699104275248,
+      "ratingLower": 1282.1660110382131,
+      "ratingUpper": 1296.7738098168365,
+      "votes": 8662
+    },
+    {
+      "rank": 298,
+      "name": "Reka Core (20240904)",
+      "organization": "",
+      "license": "Proprietary",
+      "rating": 1288.045093330802,
+      "ratingLower": 1280.8647118484726,
+      "ratingUpper": 1295.2254748131315,
+      "votes": 7312
+    },
+    {
+      "rank": 299,
+      "name": "GPT-4 (0314)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1287.8943469657931,
+      "ratingLower": 1283.1412572577026,
+      "ratingUpper": 1292.6474366738837,
+      "votes": 54173
+    },
+    {
+      "rank": 300,
+      "name": "Granite-4.0-H-Small",
+      "organization": "ibm",
+      "license": "Apache 2.0",
+      "rating": 1287.3130767239234,
+      "ratingLower": 1278.912885036829,
+      "ratingUpper": 1295.713268411018,
+      "votes": 5630
+    },
+    {
+      "rank": 301,
+      "name": "Llama 3.1 Nemotron 51B Instruct",
+      "organization": "nvidia",
+      "license": "Llama 3.1",
+      "rating": 1286.6617932052102,
+      "ratingLower": 1276.6979940163872,
+      "ratingUpper": 1296.625592394033,
+      "votes": 3749
+    },
+    {
+      "rank": 302,
+      "name": "Gemini 1.5 Flash (001)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1286.539492062323,
+      "ratingLower": 1282.0381580209723,
+      "ratingUpper": 1291.0408261036737,
+      "votes": 62833
+    },
+    {
+      "rank": 303,
+      "name": "Olmo 3.1 32B Think",
+      "organization": "allenai",
+      "license": "Apache 2.0",
+      "rating": 1286.4424710348244,
+      "ratingLower": 1279.1796895503537,
+      "ratingUpper": 1293.7052525192953,
+      "votes": 8299
+    },
+    {
+      "rank": 304,
+      "name": "Llama 3.1 Tulu 3 70B",
+      "organization": "allenai",
+      "license": "Llama 3.1",
+      "rating": 1286.1112870482884,
+      "ratingLower": 1275.6550117322108,
+      "ratingUpper": 1296.5675623643663,
+      "votes": 2846
+    },
+    {
+      "rank": 305,
+      "name": "Claude 3 Sonnet (20240229)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1281.4048042416086,
+      "ratingLower": 1277.4243376108661,
+      "ratingUpper": 1285.3852708723512,
+      "votes": 109284
+    },
+    {
+      "rank": 306,
+      "name": "Gemma 2 9B IT SimPO",
+      "organization": "",
+      "license": "MIT",
+      "rating": 1280.3800643698949,
+      "ratingLower": 1273.5242176803301,
+      "ratingUpper": 1287.2359110594596,
+      "votes": 10072
+    },
+    {
+      "rank": 307,
+      "name": "Nemotron-4 340B Instruct",
+      "organization": "nvidia",
+      "license": "NVIDIA Open Model",
+      "rating": 1277.2017483215152,
+      "ratingLower": 1271.885592668347,
+      "ratingUpper": 1282.5179039746836,
+      "votes": 19659
+    },
+    {
+      "rank": 308,
+      "name": "Llama 3 70B Instruct",
+      "organization": "meta",
+      "license": "Llama 3 Community",
+      "rating": 1276.5968241184903,
+      "ratingLower": 1273.0127251755325,
+      "ratingUpper": 1280.180923061448,
+      "votes": 156876
+    },
+    {
+      "rank": 309,
+      "name": "Command R+ (08-2024)",
+      "organization": "cohere",
+      "license": "CC-BY-NC-4.0",
+      "rating": 1276.3436635241378,
+      "ratingLower": 1269.7661301915393,
+      "ratingUpper": 1282.9211968567363,
+      "votes": 9866
+    },
+    {
+      "rank": 310,
+      "name": "GPT-4 (0613)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1276.2810894056743,
+      "ratingLower": 1272.2322197551587,
+      "ratingUpper": 1280.3299590561899,
+      "votes": 88723
+    },
+    {
+      "rank": 311,
+      "name": "Mistral Small 24B Instruct (2501)",
+      "organization": "mistral",
+      "license": "Apache 2.0",
+      "rating": 1274.382138495594,
+      "ratingLower": 1268.4598862487912,
+      "ratingUpper": 1280.304390742397,
+      "votes": 14681
+    },
+    {
+      "rank": 312,
+      "name": "GLM-4 (0520)",
+      "organization": "zai",
+      "license": "Proprietary",
+      "rating": 1273.4496259788436,
+      "ratingLower": 1266.4705530863137,
+      "ratingUpper": 1280.4286988713734,
+      "votes": 9788
+    },
+    {
+      "rank": 313,
+      "name": "Reka Flash (20240904)",
+      "organization": "",
+      "license": "Proprietary",
+      "rating": 1272.447714475149,
+      "ratingLower": 1265.4502664835404,
+      "ratingUpper": 1279.4451624667577,
+      "votes": 7536
+    },
+    {
+      "rank": 314,
+      "name": "Qwen2.5-Coder-32B-Instruct",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1270.6259707666547,
+      "ratingLower": 1262.4981741806273,
+      "ratingUpper": 1278.753767352682,
+      "votes": 5432
+    },
+    {
+      "rank": 315,
+      "name": "Aya Expanse 32B",
+      "organization": "cohere",
+      "license": "CC-BY-NC-4.0",
+      "rating": 1267.2690412306015,
+      "ratingLower": 1262.3682833647342,
+      "ratingUpper": 1272.1697990964688,
+      "votes": 27124
+    },
+    {
+      "rank": 316,
+      "name": "Gemma 2 9B IT",
+      "organization": "google",
+      "license": "Gemma license",
+      "rating": 1267.0158890657974,
+      "ratingLower": 1263.183372939614,
+      "ratingUpper": 1270.8484051919806,
+      "votes": 54611
+    },
+    {
+      "rank": 317,
+      "name": "DeepSeek-Coder-V2",
+      "organization": "deepseek",
+      "license": "DeepSeek License",
+      "rating": 1265.4127294181183,
+      "ratingLower": 1259.1414551715477,
+      "ratingUpper": 1271.6840036646888,
+      "votes": 15147
+    },
+    {
+      "rank": 318,
+      "name": "Qwen2-72B-Instruct",
+      "organization": "alibaba",
+      "license": "Qianwen LICENSE",
+      "rating": 1261.865101756942,
+      "ratingLower": 1256.9187514579885,
+      "ratingUpper": 1266.8114520558954,
+      "votes": 37325
+    },
+    {
+      "rank": 319,
+      "name": "Command R+",
+      "organization": "cohere",
+      "license": "CC-BY-NC-4.0",
+      "rating": 1261.830382364243,
+      "ratingLower": 1257.5151672062407,
+      "ratingUpper": 1266.1455975222455,
+      "votes": 77554
+    },
+    {
+      "rank": 320,
+      "name": "Claude 3 Haiku (20240307)",
+      "organization": "anthropic",
+      "license": "Proprietary",
+      "rating": 1261.7275139488358,
+      "ratingLower": 1257.9682690895136,
+      "ratingUpper": 1265.486758808158,
+      "votes": 117701
+    },
+    {
+      "rank": 321,
+      "name": "Amazon Nova Lite 1.0",
+      "organization": "amazon",
+      "license": "Proprietary",
+      "rating": 1260.435522330436,
+      "ratingLower": 1255.2417416070923,
+      "ratingUpper": 1265.62930305378,
+      "votes": 19372
+    },
+    {
+      "rank": 322,
+      "name": "Gemini 1.5 Flash-8B (001)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1258.7989282617577,
+      "ratingLower": 1254.4896116791253,
+      "ratingUpper": 1263.10824484439,
+      "votes": 35558
+    },
+    {
+      "rank": 323,
+      "name": "Phi-4",
+      "organization": "microsoft",
+      "license": "MIT",
+      "rating": 1256.288219608158,
+      "ratingLower": 1251.6763814966687,
+      "ratingUpper": 1260.900057719647,
+      "votes": 24126
+    },
+    {
+      "rank": 324,
+      "name": "OLMo 2 32B Instruct (0325)",
+      "organization": "allenai",
+      "license": "Apache-2.0",
+      "rating": 1251.6570327921368,
+      "ratingLower": 1240.8830116838847,
+      "ratingUpper": 1262.4310539003889,
+      "votes": 3334
+    },
+    {
+      "rank": 325,
+      "name": "Command R (08-2024)",
+      "organization": "cohere",
+      "license": "CC-BY-NC-4.0",
+      "rating": 1250.4798513184157,
+      "ratingLower": 1243.8777454156657,
+      "ratingUpper": 1257.0819572211658,
+      "votes": 10140
+    },
+    {
+      "rank": 326,
+      "name": "Mistral Large (2402)",
+      "organization": "mistral",
+      "license": "Proprietary",
+      "rating": 1242.6072288265211,
+      "ratingLower": 1237.8991147161898,
+      "ratingUpper": 1247.3153429368526,
+      "votes": 62436
+    },
+    {
+      "rank": 327,
+      "name": "Amazon Nova Micro 1.0",
+      "organization": "amazon",
+      "license": "Proprietary",
+      "rating": 1240.7104102227768,
+      "ratingLower": 1235.530093861402,
+      "ratingUpper": 1245.8907265841517,
+      "votes": 19364
+    },
+    {
+      "rank": 328,
+      "name": "Jamba 1.5 Mini",
+      "organization": "",
+      "license": "Jamba Open",
+      "rating": 1239.796947070409,
+      "ratingLower": 1232.572818394334,
+      "ratingUpper": 1247.021075746484,
+      "votes": 8858
+    },
+    {
+      "rank": 329,
+      "name": "Ministral 8B (2410)",
+      "organization": "mistral",
+      "license": "MRL",
+      "rating": 1237.6241644106028,
+      "ratingLower": 1228.5381173168864,
+      "ratingUpper": 1246.7102115043192,
+      "votes": 4781
+    },
+    {
+      "rank": 330,
+      "name": "Gemini Pro (Dev API)",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1236.8823994499282,
+      "ratingLower": 1229.5758554289828,
+      "ratingUpper": 1244.1889434708737,
+      "votes": 18354
+    },
+    {
+      "rank": 331,
+      "name": "Qwen1.5-110B-Chat",
+      "organization": "alibaba",
+      "license": "Qianwen LICENSE",
+      "rating": 1234.2221688153238,
+      "ratingLower": 1228.6791677280826,
+      "ratingUpper": 1239.765169902565,
+      "votes": 26195
+    },
+    {
+      "rank": 332,
+      "name": "Reka Flash 21B (Online, 20240226)",
+      "organization": "",
+      "license": "Proprietary",
+      "rating": 1233.619826978343,
+      "ratingLower": 1226.2307956555735,
+      "ratingUpper": 1241.0088583011127,
+      "votes": 15450
+    },
+    {
+      "rank": 333,
+      "name": "Qwen1.5-72B-Chat",
+      "organization": "alibaba",
+      "license": "Qianwen LICENSE",
+      "rating": 1233.590592364175,
+      "ratingLower": 1228.3273916870196,
+      "ratingUpper": 1238.8537930413306,
+      "votes": 39302
+    },
+    {
+      "rank": 334,
+      "name": "Hunyuan Standard 256K",
+      "organization": "tencent",
+      "license": "Proprietary",
+      "rating": 1233.2008753527712,
+      "ratingLower": 1221.478525552673,
+      "ratingUpper": 1244.9232251528695,
+      "votes": 2728
+    },
+    {
+      "rank": 335,
+      "name": "Mixtral 8x22B Instruct v0.1",
+      "organization": "mistral",
+      "license": "Apache 2.0",
+      "rating": 1229.6533266840356,
+      "ratingLower": 1225.101163399777,
+      "ratingUpper": 1234.2054899682942,
+      "votes": 51416
+    },
+    {
+      "rank": 336,
+      "name": "Command R",
+      "organization": "cohere",
+      "license": "CC-BY-NC-4.0",
+      "rating": 1226.936238371554,
+      "ratingLower": 1222.1629276366737,
+      "ratingUpper": 1231.7095491064345,
+      "votes": 54036
+    },
+    {
+      "rank": 337,
+      "name": "Reka Flash 21B (20240226)",
+      "organization": "",
+      "license": "Proprietary",
+      "rating": 1226.8760495224687,
+      "ratingLower": 1220.9413366032377,
+      "ratingUpper": 1232.8107624416998,
+      "votes": 24806
+    },
+    {
+      "rank": 338,
+      "name": "GPT-3.5 Turbo (0125)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1225.6415232343827,
+      "ratingLower": 1220.9526961160047,
+      "ratingUpper": 1230.330350352761,
+      "votes": 66207
+    },
+    {
+      "rank": 339,
+      "name": "Llama 3 8B Instruct",
+      "organization": "meta",
+      "license": "Llama 3 Community",
+      "rating": 1223.676835327875,
+      "ratingLower": 1219.9425688155598,
+      "ratingUpper": 1227.4111018401904,
+      "votes": 104642
+    },
+    {
+      "rank": 340,
+      "name": "Gemini Pro",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1223.6713937001084,
+      "ratingLower": 1211.9546374379638,
+      "ratingUpper": 1235.3881499622528,
+      "votes": 6390
+    },
+    {
+      "rank": 341,
+      "name": "Aya Expanse 8B",
+      "organization": "cohere",
+      "license": "CC-BY-NC-4.0",
+      "rating": 1223.0795378094826,
+      "ratingLower": 1216.0991750207045,
+      "ratingUpper": 1230.0599005982606,
+      "votes": 9818
+    },
+    {
+      "rank": 342,
+      "name": "Mistral Medium",
+      "organization": "mistral",
+      "license": "Proprietary",
+      "rating": 1222.7762657943513,
+      "ratingLower": 1217.2971524155378,
+      "ratingUpper": 1228.2553791731648,
+      "votes": 34550
+    },
+    {
+      "rank": 343,
+      "name": "Llama 3.1 Tulu 3 8B",
+      "organization": "allenai",
+      "license": "Llama 3.1",
+      "rating": 1220.5008061225553,
+      "ratingLower": 1209.8317432715207,
+      "ratingUpper": 1231.16986897359,
+      "votes": 2896
+    },
+    {
+      "rank": 344,
+      "name": "Zephyr ORPO 141B A35B v0.1",
+      "organization": "",
+      "license": "Apache 2.0",
+      "rating": 1213.0873244374948,
+      "ratingLower": 1202.3181595376493,
+      "ratingUpper": 1223.8564893373402,
+      "votes": 4652
+    },
+    {
+      "rank": 345,
+      "name": "Yi 1.5 34B Chat",
+      "organization": "",
+      "license": "Apache-2.0",
+      "rating": 1212.8812965569723,
+      "ratingLower": 1207.8494852657232,
+      "ratingUpper": 1217.9131078482217,
+      "votes": 24146
+    },
+    {
+      "rank": 346,
+      "name": "Llama 3.1 8B Instruct",
+      "organization": "meta",
+      "license": "Llama 3.1 Community",
+      "rating": 1211.2274231623915,
+      "ratingLower": 1207.0651399340638,
+      "ratingUpper": 1215.3897063907193,
+      "votes": 49605
+    },
+    {
+      "rank": 347,
+      "name": "Granite 3.1 8B Instruct",
+      "organization": "ibm",
+      "license": "Apache 2.0",
+      "rating": 1208.5741720964274,
+      "ratingLower": 1197.4853522879134,
+      "ratingUpper": 1219.6629919049417,
+      "votes": 3090
+    },
+    {
+      "rank": 348,
+      "name": "GPT-3.5 Turbo (1106)",
+      "organization": "openai",
+      "license": "Proprietary",
+      "rating": 1204.2929152068023,
+      "ratingLower": 1195.57554709382,
+      "ratingUpper": 1213.0102833197845,
+      "votes": 16619
+    },
+    {
+      "rank": 349,
+      "name": "Qwen1.5-32B-Chat",
+      "organization": "alibaba",
+      "license": "Qianwen LICENSE",
+      "rating": 1204.0559677218591,
+      "ratingLower": 1197.949300822069,
+      "ratingUpper": 1210.1626346216494,
+      "votes": 21741
+    },
+    {
+      "rank": 350,
+      "name": "Gemma 2 2B IT",
+      "organization": "google",
+      "license": "Gemma license",
+      "rating": 1200.0929032935562,
+      "ratingLower": 1195.9868007114528,
+      "ratingUpper": 1204.1990058756599,
+      "votes": 46616
+    },
+    {
+      "rank": 351,
+      "name": "Phi-3 Medium 4K Instruct",
+      "organization": "microsoft",
+      "license": "MIT",
+      "rating": 1197.9670796590476,
+      "ratingLower": 1192.810051146825,
+      "ratingUpper": 1203.1241081712706,
+      "votes": 25055
+    },
+    {
+      "rank": 352,
+      "name": "Mixtral 8x7B Instruct v0.1",
+      "organization": "mistral",
+      "license": "Apache 2.0",
+      "rating": 1197.2281967404554,
+      "ratingLower": 1192.971924141109,
+      "ratingUpper": 1201.484469339802,
+      "votes": 73503
+    },
+    {
+      "rank": 353,
+      "name": "DBRX Instruct Preview",
+      "organization": "",
+      "license": "DBRX LICENSE",
+      "rating": 1195.584864277495,
+      "ratingLower": 1189.4822983743957,
+      "ratingUpper": 1201.6874301805942,
+      "votes": 32191
+    },
+    {
+      "rank": 354,
+      "name": "Qwen1.5-14B-Chat",
+      "organization": "alibaba",
+      "license": "Qianwen LICENSE",
+      "rating": 1191.140020871463,
+      "ratingLower": 1184.0366481845756,
+      "ratingUpper": 1198.2433935583506,
+      "votes": 17839
+    },
+    {
+      "rank": 355,
+      "name": "InternLM2.5 20B Chat",
+      "organization": "",
+      "license": "Other",
+      "rating": 1190.7801028693093,
+      "ratingLower": 1183.5980211259264,
+      "ratingUpper": 1197.9621846126922,
+      "votes": 9901
+    },
+    {
+      "rank": 356,
+      "name": "DeepSeek LLM 67B Chat",
+      "organization": "deepseek",
+      "license": "DeepSeek License",
+      "rating": 1185.0044827404774,
+      "ratingLower": 1173.5481964972535,
+      "ratingUpper": 1196.4607689837014,
+      "votes": 4932
+    },
+    {
+      "rank": 357,
+      "name": "WizardLM 70B",
+      "organization": "microsoft",
+      "license": "Llama 2 Community",
+      "rating": 1184.8099280866013,
+      "ratingLower": 1175.3958023618266,
+      "ratingUpper": 1194.2240538113758,
+      "votes": 8214
+    },
+    {
+      "rank": 358,
+      "name": "Yi 34B Chat",
+      "organization": "",
+      "license": "Yi License",
+      "rating": 1183.783368508877,
+      "ratingLower": 1176.9688390686056,
+      "ratingUpper": 1190.5978979491483,
+      "votes": 15483
+    },
+    {
+      "rank": 359,
+      "name": "Granite 3.0 8B Instruct",
+      "organization": "ibm",
+      "license": "Apache 2.0",
+      "rating": 1183.2056951394159,
+      "ratingLower": 1174.5361217477246,
+      "ratingUpper": 1191.8752685311072,
+      "votes": 6638
+    },
+    {
+      "rank": 360,
+      "name": "OpenChat 3.5",
+      "organization": "",
+      "license": "Apache-2.0",
+      "rating": 1183.1128266007588,
+      "ratingLower": 1173.4768351168307,
+      "ratingUpper": 1192.7488180846872,
+      "votes": 7968
+    },
+    {
+      "rank": 361,
+      "name": "OpenChat 3.5 (0106)",
+      "organization": "",
+      "license": "Apache-2.0",
+      "rating": 1182.8112119432526,
+      "ratingLower": 1174.8343162956185,
+      "ratingUpper": 1190.7881075908867,
+      "votes": 12637
+    },
+    {
+      "rank": 362,
+      "name": "Gemma 1.1 7B IT",
+      "organization": "google",
+      "license": "Gemma license",
+      "rating": 1182.6028808872713,
+      "ratingLower": 1176.5416550781586,
+      "ratingUpper": 1188.6641066963841,
+      "votes": 23893
+    },
+    {
+      "rank": 363,
+      "name": "Snowflake Arctic Instruct",
+      "organization": "",
+      "license": "Apache 2.0",
+      "rating": 1180.116754087001,
+      "ratingLower": 1174.2165152941234,
+      "ratingUpper": 1186.016992879879,
+      "votes": 32832
+    },
+    {
+      "rank": 364,
+      "name": "Granite 3.1 2B Instruct",
+      "organization": "ibm",
+      "license": "Apache 2.0",
+      "rating": 1178.9244016935554,
+      "ratingLower": 1167.7482699874417,
+      "ratingUpper": 1190.100533399669,
+      "votes": 3188
+    },
+    {
+      "rank": 365,
+      "name": "Tulu 2 DPO 70B",
+      "organization": "",
+      "license": "AI2 ImpACT Low-risk",
+      "rating": 1177.7274349590148,
+      "ratingLower": 1167.9430643908283,
+      "ratingUpper": 1187.5118055272012,
+      "votes": 6535
+    },
+    {
+      "rank": 366,
+      "name": "OpenHermes 2.5 Mistral 7B",
+      "organization": "",
+      "license": "Apache-2.0",
+      "rating": 1176.0250418917958,
+      "ratingLower": 1165.6441946780678,
+      "ratingUpper": 1186.4058891055238,
+      "votes": 5006
+    },
+    {
+      "rank": 367,
+      "name": "Vicuna 33B",
+      "organization": "",
+      "license": "Non-commercial",
+      "rating": 1172.9949058281657,
+      "ratingLower": 1166.8139282687382,
+      "ratingUpper": 1179.175883387593,
+      "votes": 22479
+    },
+    {
+      "rank": 368,
+      "name": "Phi-3 Small 8K Instruct",
+      "organization": "microsoft",
+      "license": "MIT",
+      "rating": 1171.132283390432,
+      "ratingLower": 1165.2252381299038,
+      "ratingUpper": 1177.0393286509602,
+      "votes": 17766
+    },
+    {
+      "rank": 369,
+      "name": "Starling LM 7B Beta",
+      "organization": "",
+      "license": "Apache-2.0",
+      "rating": 1171.0331766176803,
+      "ratingLower": 1163.643883257712,
+      "ratingUpper": 1178.4224699776482,
+      "votes": 16056
+    },
+    {
+      "rank": 370,
+      "name": "Llama 2 70B Chat",
+      "organization": "meta",
+      "license": "Llama 2 Community",
+      "rating": 1170.7006651248616,
+      "ratingLower": 1165.2205225737716,
+      "ratingUpper": 1176.1808076759517,
+      "votes": 38492
+    },
+    {
+      "rank": 371,
+      "name": "Starling LM 7B Alpha",
+      "organization": "",
+      "license": "CC-BY-NC-4.0",
+      "rating": 1167.4740803505565,
+      "ratingLower": 1159.427987779276,
+      "ratingUpper": 1175.520172921837,
+      "votes": 10224
+    },
+    {
+      "rank": 372,
+      "name": "Llama 3.2 3B Instruct",
+      "organization": "meta",
+      "license": "Llama 3.2",
+      "rating": 1166.8214262886302,
+      "ratingLower": 1159.120595823528,
+      "ratingUpper": 1174.5222567537323,
+      "votes": 7936
+    },
+    {
+      "rank": 373,
+      "name": "Nous Hermes 2 Mixtral 8x7B DPO",
+      "organization": "",
+      "license": "Apache-2.0",
+      "rating": 1164.4567312707939,
+      "ratingLower": 1152.5719468855614,
+      "ratingUpper": 1176.3415156560263,
+      "votes": 3777
+    },
+    {
+      "rank": 374,
+      "name": "Granite 3.0 2B Instruct",
+      "organization": "ibm",
+      "license": "Apache 2.0",
+      "rating": 1156.7210643038277,
+      "ratingLower": 1148.3434764351691,
+      "ratingUpper": 1165.098652172486,
+      "votes": 6837
+    },
+    {
+      "rank": 375,
+      "name": "Llama 2 70B SteerLM Chat",
+      "organization": "nvidia",
+      "license": "Llama 2 Community",
+      "rating": 1154.7606430200556,
+      "ratingLower": 1142.1939868957247,
+      "ratingUpper": 1167.3272991443864,
+      "votes": 3585
+    },
+    {
+      "rank": 376,
+      "name": "QwQ-32B-Preview",
+      "organization": "alibaba",
+      "license": "Apache 2.0",
+      "rating": 1154.2480511794463,
+      "ratingLower": 1142.7753636072962,
+      "ratingUpper": 1165.7207387515964,
+      "votes": 3231
+    },
+    {
+      "rank": 377,
+      "name": "SOLAR 10.7B Instruct v1.0",
+      "organization": "upstage",
+      "license": "CC-BY-NC-4.0",
+      "rating": 1152.4903955890834,
+      "ratingLower": 1139.3625187970413,
+      "ratingUpper": 1165.6182723811255,
+      "votes": 4155
+    },
+    {
+      "rank": 378,
+      "name": "Dolphin 2.2.1 Mistral 7B",
+      "organization": "",
+      "license": "Apache-2.0",
+      "rating": 1152.3400245685773,
+      "ratingLower": 1137.0698094740083,
+      "ratingUpper": 1167.6102396631466,
+      "votes": 1679
+    },
+    {
+      "rank": 379,
+      "name": "MPT 30B Chat",
+      "organization": "",
+      "license": "CC-BY-NC-SA-4.0",
+      "rating": 1150.821674314034,
+      "ratingLower": 1138.6230444801172,
+      "ratingUpper": 1163.020304147951,
+      "votes": 2572
+    },
+    {
+      "rank": 380,
+      "name": "WizardLM 13B",
+      "organization": "microsoft",
+      "license": "Llama 2 Community",
+      "rating": 1149.5902970843001,
+      "ratingLower": 1140.4014371382314,
+      "ratingUpper": 1158.779157030369,
+      "votes": 7044
+    },
+    {
+      "rank": 381,
+      "name": "Mistral 7B Instruct v0.2",
+      "organization": "mistral",
+      "license": "Apache-2.0",
+      "rating": 1149.4528121955536,
+      "ratingLower": 1142.8158474651755,
+      "ratingUpper": 1156.0897769259318,
+      "votes": 19402
+    },
+    {
+      "rank": 382,
+      "name": "Falcon 180B Chat",
+      "organization": "",
+      "license": "Falcon-180B TII License",
+      "rating": 1148.1910887964054,
+      "ratingLower": 1131.1934294926648,
+      "ratingUpper": 1165.188748100146,
+      "votes": 1295
+    },
+    {
+      "rank": 383,
+      "name": "Qwen1.5-7B-Chat",
+      "organization": "alibaba",
+      "license": "Qianwen LICENSE",
+      "rating": 1143.9046128936666,
+      "ratingLower": 1134.034336893531,
+      "ratingUpper": 1153.774888893802,
+      "votes": 4737
+    },
+    {
+      "rank": 384,
+      "name": "Phi-3 Mini 4K Instruct (June 2024)",
+      "organization": "microsoft",
+      "license": "MIT",
+      "rating": 1143.1750944150829,
+      "ratingLower": 1136.740552098828,
+      "ratingUpper": 1149.6096367313378,
+      "votes": 12297
+    },
+    {
+      "rank": 385,
+      "name": "Vicuna 13B",
+      "organization": "",
+      "license": "Llama 2 Community",
+      "rating": 1141.632849702448,
+      "ratingLower": 1134.9572905465634,
+      "ratingUpper": 1148.3084088583328,
+      "votes": 19367
+    },
+    {
+      "rank": 386,
+      "name": "Llama 2 13B Chat",
+      "organization": "meta",
+      "license": "Llama 2 Community",
+      "rating": 1141.4815208089692,
+      "ratingLower": 1134.7740481699093,
+      "ratingUpper": 1148.1889934480291,
+      "votes": 19174
+    },
+    {
+      "rank": 387,
+      "name": "Qwen-14B-Chat",
+      "organization": "alibaba",
+      "license": "Qianwen LICENSE",
+      "rating": 1139.421748460355,
+      "ratingLower": 1128.5076886658112,
+      "ratingUpper": 1150.335808254899,
+      "votes": 4964
+    },
+    {
+      "rank": 388,
+      "name": "PaLM 2",
+      "organization": "google",
+      "license": "Proprietary",
+      "rating": 1139.2386810546527,
+      "ratingLower": 1129.9080157038813,
+      "ratingUpper": 1148.569346405424,
+      "votes": 8554
+    },
+    {
+      "rank": 389,
+      "name": "Gemma 7B IT",
+      "organization": "google",
+      "license": "Gemma license",
+      "rating": 1137.7529742998602,
+      "ratingLower": 1128.2887993399324,
+      "ratingUpper": 1147.2171492597881,
+      "votes": 8925
+    },
+    {
+      "rank": 390,
+      "name": "Code Llama 34B Instruct",
+      "organization": "meta",
+      "license": "Llama 2 Community",
+      "rating": 1136.9278005815318,
+      "ratingLower": 1128.0610195704005,
+      "ratingUpper": 1145.7945815926628,
+      "votes": 7366
+    },
+    {
+      "rank": 391,
+      "name": "Zephyr 7B Beta",
+      "organization": "",
+      "license": "MIT",
+      "rating": 1130.87016504477,
+      "ratingLower": 1122.065336564032,
+      "ratingUpper": 1139.6749935255077,
+      "votes": 11118
+    },
+    {
+      "rank": 392,
+      "name": "Phi-3 Mini 128K Instruct",
+      "organization": "microsoft",
+      "license": "MIT",
+      "rating": 1129.8987286174265,
+      "ratingLower": 1122.4883557151356,
+      "ratingUpper": 1137.3091015197172,
+      "votes": 20685
+    },
+    {
+      "rank": 393,
+      "name": "Phi-3 Mini 4K Instruct",
+      "organization": "microsoft",
+      "license": "MIT",
+      "rating": 1128.1593554336669,
+      "ratingLower": 1121.771669765791,
+      "ratingUpper": 1134.5470411015428,
+      "votes": 20118
+    },
+    {
+      "rank": 394,
+      "name": "Guanaco 33B",
+      "organization": "",
+      "license": "Non-commercial",
+      "rating": 1127.5559694059746,
+      "ratingLower": 1115.51183674694,
+      "ratingUpper": 1139.6001020650094,
+      "votes": 2921
+    },
+    {
+      "rank": 395,
+      "name": "Zephyr 7B Alpha",
+      "organization": "",
+      "license": "MIT",
+      "rating": 1127.0001321368477,
+      "ratingLower": 1111.460052877002,
+      "ratingUpper": 1142.5402113966932,
+      "votes": 1785
+    },
+    {
+      "rank": 396,
+      "name": "StripedHyena Nous 7B",
+      "organization": "",
+      "license": "Apache 2.0",
+      "rating": 1121.6774429807006,
+      "ratingLower": 1110.7276503129806,
+      "ratingUpper": 1132.6272356484208,
+      "votes": 5182
+    },
+    {
+      "rank": 397,
+      "name": "Code Llama 70B Instruct",
+      "organization": "meta",
+      "license": "Llama 2 Community",
+      "rating": 1119.2189317611044,
+      "ratingLower": 1101.1439216897556,
+      "ratingUpper": 1137.2939418324531,
+      "votes": 1143
+    },
+    {
+      "rank": 398,
+      "name": "Gemma 1.1 2B IT",
+      "organization": "google",
+      "license": "Gemma license",
+      "rating": 1116.7049226027718,
+      "ratingLower": 1108.990104939865,
+      "ratingUpper": 1124.4197402656787,
+      "votes": 10854
+    },
+    {
+      "rank": 399,
+      "name": "Vicuna 7B",
+      "organization": "",
+      "license": "Llama 2 Community",
+      "rating": 1115.375515580523,
+      "ratingLower": 1106.278319277018,
+      "ratingUpper": 1124.4727118840278,
+      "votes": 6923
+    },
+    {
+      "rank": 400,
+      "name": "SmolLM2 1.7B Instruct",
+      "organization": "",
+      "license": "Apache 2.0",
+      "rating": 1114.7588966290175,
+      "ratingLower": 1100.4257160282955,
+      "ratingUpper": 1129.0920772297393,
+      "votes": 2199
+    },
+    {
+      "rank": 401,
+      "name": "Llama 3.2 1B Instruct",
+      "organization": "meta",
+      "license": "Llama 3.2",
+      "rating": 1111.1483822326568,
+      "ratingLower": 1103.2708491224137,
+      "ratingUpper": 1119.0259153429,
+      "votes": 8045
+    },
+    {
+      "rank": 402,
+      "name": "Mistral 7B Instruct",
+      "organization": "mistral",
+      "license": "Apache 2.0",
+      "rating": 1110.4261308812515,
+      "ratingLower": 1101.1684250886233,
+      "ratingUpper": 1119.6838366738798,
+      "votes": 8977
+    },
+    {
+      "rank": 403,
+      "name": "Llama 2 7B Chat",
+      "organization": "meta",
+      "license": "Llama 2 Community",
+      "rating": 1107.9869171188118,
+      "ratingLower": 1100.9519664658364,
+      "ratingUpper": 1115.021867771787,
+      "votes": 14148
+    },
+    {
+      "rank": 404,
+      "name": "Gemma 2B IT",
+      "organization": "google",
+      "license": "Gemma license",
+      "rating": 1093.6854382438119,
+      "ratingLower": 1082.2340107924165,
+      "ratingUpper": 1105.136865695207,
+      "votes": 4780
+    },
+    {
+      "rank": 405,
+      "name": "Qwen1.5-4B-Chat",
+      "organization": "alibaba",
+      "license": "Qianwen LICENSE",
+      "rating": 1091.2005761455684,
+      "ratingLower": 1081.8882528653382,
+      "ratingUpper": 1100.5128994257989,
+      "votes": 7597
+    },
+    {
+      "rank": 406,
+      "name": "OLMo 7B Instruct",
+      "organization": "allenai",
+      "license": "Apache-2.0",
+      "rating": 1073.6743106661631,
+      "ratingLower": 1062.5474535959038,
+      "ratingUpper": 1084.8011677364225,
+      "votes": 6328
+    },
+    {
+      "rank": 407,
+      "name": "Koala 13B",
+      "organization": "",
+      "license": "Non-commercial",
+      "rating": 1070.9924877215074,
+      "ratingLower": 1061.1825415058981,
+      "ratingUpper": 1080.8024339371163,
+      "votes": 6965
+    },
+    {
+      "rank": 408,
+      "name": "Alpaca 13B",
+      "organization": "",
+      "license": "Non-commercial",
+      "rating": 1070.2927207485227,
+      "ratingLower": 1058.9113172200496,
+      "ratingUpper": 1081.6741242769958,
+      "votes": 5745
+    },
+    {
+      "rank": 409,
+      "name": "GPT4All 13B Snoozy",
+      "organization": "",
+      "license": "Non-commercial",
+      "rating": 1067.7699935481467,
+      "ratingLower": 1052.640330371295,
+      "ratingUpper": 1082.899656724998,
+      "votes": 1743
+    },
+    {
+      "rank": 410,
+      "name": "MPT 7B Chat",
+      "organization": "",
+      "license": "CC-BY-NC-SA-4.0",
+      "rating": 1063.5099598764875,
+      "ratingLower": 1051.6089167742466,
+      "ratingUpper": 1075.4110029787287,
+      "votes": 3924
+    },
+    {
+      "rank": 411,
+      "name": "ChatGLM3 6B",
+      "organization": "",
+      "license": "Apache-2.0",
+      "rating": 1056.6301927997024,
+      "ratingLower": 1045.0036446998843,
+      "ratingUpper": 1068.2567408995208,
+      "votes": 4658
+    },
+    {
+      "rank": 412,
+      "name": "RWKV-4 Raven 14B",
+      "organization": "",
+      "license": "Apache 2.0",
+      "rating": 1042.4004203906018,
+      "ratingLower": 1031.0870017370873,
+      "ratingUpper": 1053.7138390441162,
+      "votes": 4845
+    },
+    {
+      "rank": 413,
+      "name": "ChatGLM2 6B",
+      "organization": "",
+      "license": "Apache-2.0",
+      "rating": 1024.8321786378876,
+      "ratingLower": 1011.3013728738442,
+      "ratingUpper": 1038.3629844019313,
+      "votes": 2658
+    },
+    {
+      "rank": 414,
+      "name": "OpenAssistant Pythia 12B",
+      "organization": "",
+      "license": "Apache 2.0",
+      "rating": 1023.5884787170103,
+      "ratingLower": 1012.7973792387538,
+      "ratingUpper": 1034.379578195267,
+      "votes": 6310
+    },
+    {
+      "rank": 415,
+      "name": "ChatGLM 6B",
+      "organization": "",
+      "license": "Non-commercial",
+      "rating": 995.884785554282,
+      "ratingLower": 983.3982585132048,
+      "ratingUpper": 1008.3713125953593,
+      "votes": 4914
+    },
+    {
+      "rank": 416,
+      "name": "FastChat-T5 3B",
+      "organization": "",
+      "license": "Apache 2.0",
+      "rating": 992.6268523614638,
+      "ratingLower": 980.3383235207077,
+      "ratingUpper": 1004.9153812022198,
+      "votes": 4203
+    },
+    {
+      "rank": 417,
+      "name": "Dolly 2.0 12B",
+      "organization": "",
+      "license": "MIT",
+      "rating": 982.550344736464,
+      "ratingLower": 969.1269727743345,
+      "ratingUpper": 995.9737166985935,
+      "votes": 3412
+    },
+    {
+      "rank": 418,
+      "name": "LLaMA 13B",
+      "organization": "meta",
+      "license": "Non-commercial",
+      "rating": 975.2372659611358,
+      "ratingLower": 959.5791427608956,
+      "ratingUpper": 990.895389161376,
+      "votes": 2391
+    },
+    {
+      "rank": 419,
+      "name": "StableLM Tuned Alpha 7B",
+      "organization": "",
+      "license": "CC-BY-NC-SA-4.0",
+      "rating": 953.2660417478089,
+      "ratingLower": 940.6484222793742,
+      "ratingUpper": 965.8836612162436,
+      "votes": 3287
+    }
+  ]
+}
