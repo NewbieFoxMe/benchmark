@@ -73,6 +73,7 @@ function renderRows() {
   elements.emptyState.querySelector('a').hidden = hasData;
   document.querySelector('#result-count').textContent = hasData ? `${matches.length} / ${state.results.length} 条结果` : '0 条结果';
   if (hasData && matches.length === 0) {
+    elements.emptyState.querySelector('.empty-label').textContent = 'FILTER / EMPTY';
     elements.emptyState.querySelector('h4').textContent = '当前条件没有结果';
     elements.emptyState.querySelector('p').textContent = '换个模型名称、工作负载或并发度试试。';
   }
@@ -85,7 +86,7 @@ function setWorkload(workloadId) {
   state.concurrency = levels.includes(32) ? 32 : levels[0];
   elements.concurrency.value = String(state.concurrency);
   const workload = state.workloads.find((item) => item.id === workloadId);
-  elements.caption.textContent = `${workload.label} · 输入 ${workload.inputTokens.toLocaleString('zh-CN')} token / 输出 ${workload.outputTokens.toLocaleString('zh-CN')} token · ${workload.hardware}`;
+  elements.caption.textContent = `${workload.label} · 输入 ${workload.inputTokens.toLocaleString('zh-CN')} token / 输出上限 ${workload.outputTokens.toLocaleString('zh-CN')} token · ${workload.hardware}`;
   renderRows();
 }
 
@@ -118,6 +119,12 @@ try {
   if (results.length > 0) {
     document.querySelector('#hero-status').textContent = '实测结果已发布.';
     document.querySelector('#hero-description').textContent = '按工作负载与并发度筛选，比较推理服务表现。';
+  } else {
+    document.querySelector('#hero-status').textContent = '暂无已发布结果.';
+    document.querySelector('#hero-description').textContent = '评测结果发布后将显示在这里。';
+    document.querySelector('#empty-state .empty-label').textContent = 'DATASET / EMPTY';
+    document.querySelector('#empty-state h4').textContent = '暂无已发布结果';
+    document.querySelector('#empty-state p').textContent = '请稍后查看。';
   }
   if (payload.publishedAt) document.querySelector('#published-at').textContent = `数据更新 · ${new Intl.DateTimeFormat('zh-CN', { dateStyle: 'medium' }).format(new Date(payload.publishedAt))}`;
   if (results.length > 0) {
@@ -127,7 +134,11 @@ try {
   }
   setMetric('throughput');
 } catch {
+  document.querySelector('#hero-status').textContent = '数据加载失败.';
+  document.querySelector('#hero-description').textContent = '请稍后刷新页面。';
   document.querySelector('#published-at').textContent = '数据状态 · 加载失败';
+  document.querySelector('#empty-state .empty-label').textContent = 'DATASET / ERROR';
   document.querySelector('#empty-state h4').textContent = '数据暂时无法加载';
   document.querySelector('#empty-state p').textContent = '请稍后刷新页面。';
+  document.querySelector('#empty-state a').hidden = true;
 }

@@ -1,6 +1,6 @@
 # Benchmark
 
-自托管 LLM 推理服务性能对比站点。页面按工作负载与并发度分组，展示总吞吐、首 Token 延迟、单请求解码速度和端到端时间。当前版本完成站点骨架，评测快照随后从 `llm-serving` 整理。
+自托管 LLM 推理服务性能对比站点。页面按工作负载与并发度分组，展示总吞吐、首 Token 延迟、单请求解码速度和端到端时间。首批公开数据来自 [2026-10-24 双机并发评测](docs/datasets/2026-10-24-concurrency256.md)：三个容量 256 的服务配置、七档并发，共 21 条结果。
 
 ## 本地预览
 
@@ -21,7 +21,7 @@ python3 -m http.server 8000 -d public
 | `results[]` | `workloadId`、`model`、`engine`、`release`、`concurrency`、`measuredAt`、`sourceUrl`、`metrics` |
 | `metrics` | `outputTps`、`ttftSeconds`、`requestDecodeTps`、`e2eSeconds` |
 
-每条结果引用已定义的工作负载，`sourceUrl` 指向公开来源；缺失的指标用 `null`。同一工作负载与并发度下比较结果，避免混合不同测量条件。
+每条结果引用已定义的工作负载，`sourceUrl` 指向公开来源；缺失的指标用 `null`。同一工作负载与并发度下比较结果，评测配置与聚合证据见[数据说明](docs/datasets/2026-10-24-concurrency256.md)。
 
 ## Cloudflare Pages
 

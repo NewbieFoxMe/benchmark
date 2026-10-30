@@ -1,5 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
+import { readFile } from 'node:fs/promises';
 import { isValidDataset, isValidResult, isValidWorkload, sortAndFilter } from '../public/benchmark.js';
 
 const workload = { id: 'short', label: '短输入', hardware: '8 GPUs', inputTokens: 1028, outputTokens: 128 };
@@ -31,4 +33,35 @@ test('validates workload and published result provenance', () => {
   assert.equal(isValidResult({ ...results[0], metrics: { outputTps: '500' } }), false);
   assert.equal(isValidDataset({ publishedAt: '2026-10-24T00:00:00Z', workloads: [workload], results }), true);
   assert.equal(isValidDataset({ publishedAt: '2026-10-24T00:00:00Z', workloads: [], results }), false);
+});
+
+test('published results match the audited aggregate evidence', async () => {
+  const dataset = JSON.parse(await readFile(new URL('../public/data/results.json', import.meta.url), 'utf8'));
+  const evidenceFile = await readFile(new URL('../public/data/evidence/2026-10-24-concurrency-plot-data.json', import.meta.url));
+  const evidence = JSON.parse(evidenceFile);
+  assert.equal(createHash('sha256').update(evidenceFile).digest('hex'), 'db35811228d5ee568400abf7400ac9371d4ecb1839ce628e2810ec65e05a6d56');
+  assert.equal(isValidDataset(dataset), true);
+  assert.equal(dataset.workloads.length, 1);
+  assert.equal(dataset.results.length, 21);
+
+  const releases = new Map([
+    ['recipe-sm120-capacity256-deepinfer-index512-20261024', 'DeepInfer'],
+    ['sglang-tp8-gdr-capacity256-mem74-graph32-20261024', 'SGLang'],
+    ['vllm-tp4-dp2-ep8-capacity256-20261024', 'vLLM'],
+  ]);
+  const keys = new Set();
+  for (const series of evidence.filter((item) => releases.has(item.release))) {
+    const engine = releases.get(series.release);
+    assert.deepEqual(series.rows.map((row) => row.concurrency), [1, 8, 16, 32, 64, 128, 256]);
+    for (const row of series.rows) {
+      const result = dataset.results.find((item) => item.engine === engine && item.concurrency === row.concurrency);
+      assert.ok(result, `${engine} C${row.concurrency}`);
+      keys.add(`${result.workloadId}/${result.model}/${result.engine}/${result.release}/${result.concurrency}`);
+      assert.equal(result.metrics.outputTps, row.output_tokens_per_second_mean);
+      assert.equal(result.metrics.ttftSeconds, row.ttft_mean_ms / 1000);
+      assert.equal(result.metrics.requestDecodeTps, row.request_decode_tokens_per_second);
+      assert.equal(result.metrics.e2eSeconds, row.e2e_mean_ms / 1000);
+    }
+  }
+  assert.equal(keys.size, dataset.results.length);
 });

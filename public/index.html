@@ -42,8 +42,8 @@
             <div class="panel-topline"><span>PUBLIC DATASET</span><span>V 0.1</span></div>
             <div class="panel-core">
               <span class="panel-kicker">当前状态</span>
-              <strong id="hero-status">首批数据<br />准备中<span class="panel-period">.</span></strong>
-              <p id="hero-description">结果发布后，可按工作负载与并发度筛选对比。</p>
+              <strong id="hero-status">读取评测数据<span class="panel-period">.</span></strong>
+              <p id="hero-description">正在加载服务配置与实测结果。</p>
             </div>
             <div class="panel-bottomline"><span>已发布结果</span><strong id="hero-count">00</strong><span class="panel-asterisk" aria-hidden="true">✳</span></div>
           </div>
@@ -62,7 +62,7 @@
       <section class="leaderboard section container" id="leaderboard" aria-labelledby="leaderboard-title">
         <div class="section-heading">
           <div><span class="section-index">01 / EXPLORE</span><h2 id="leaderboard-title">服务对比<span class="heading-period">.</span></h2></div>
-          <p>同一负载、同一并发度下看结果，避免把不同测量条件混成一张榜。</p>
+          <p>同一负载、同一并发度下比较服务配置，结合并行策略与 Graph 覆盖解读结果。</p>
         </div>
         <div class="board">
           <div class="board-toolbar">
@@ -84,14 +84,15 @@
             </div>
             <p class="workload-caption" id="workload-caption" hidden></p>
             <div class="results-wrap" id="results-wrap" hidden>
+              <p class="table-hint">左右滑动查看完整结果 →</p>
               <table><thead><tr><th scope="col">引擎 / 模型</th><th scope="col" id="metric-column">总吞吐</th><th scope="col">并发</th><th scope="col">测量时间</th><th scope="col">来源</th></tr></thead><tbody id="results-body"></tbody></table>
             </div>
             <div class="empty-state" id="empty-state">
               <div class="empty-symbol" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-              <div><span class="empty-label">DATASET / PENDING</span><h4>首批评测结果准备中</h4><p>数据结构与对比界面已就位。下一步整理 llm-serving 的同负载实测快照与来源记录。</p><a href="https://github.com/NewbieFoxMe/benchmark" target="_blank" rel="noopener noreferrer">查看数据文件 <span aria-hidden="true">↗</span></a></div>
+              <div><span class="empty-label">DATASET / LOADING</span><h4>正在读取评测数据</h4><p>请稍候。</p><a href="/data/results.json">查看数据文件 <span aria-hidden="true">↗</span></a></div>
             </div>
           </div>
-          <div class="board-footer"><span id="published-at">数据状态 · 等待首批结果</span><span>BENCHMARK / 2026</span></div>
+          <div class="board-footer"><span id="published-at">数据状态 · 加载中</span><span>BENCHMARK / 2026</span></div>
         </div>
       </section>
 
@@ -104,7 +105,7 @@
             <article class="metric-card"><span class="card-number">03 — DECODE</span><span class="card-glyph" aria-hidden="true">↗</span><h3>单请求解码速度</h3><p>每个请求首 Token 后的输出速率，再按请求聚合。</p><span class="card-unit">TOKEN / SEC / REQUEST <i>↑</i></span></article>
             <article class="metric-card"><span class="card-number">04 — END TO END</span><span class="card-glyph" aria-hidden="true">◎</span><h3>端到端时间</h3><p>客户端从发出请求到收到完整输出的平均耗时。</p><span class="card-unit">SECONDS <i>↓</i></span></article>
           </div>
-          <div class="method-note"><span class="method-note-mark" aria-hidden="true">✳</span><p><strong>相同负载，是比较的前提。</strong> 每条结果保留模型、引擎、并发度、测量时间和来源链接；跨负载结果分别展示。</p><a href="https://github.com/NewbieFoxMe/benchmark" target="_blank" rel="noopener noreferrer">查看项目源码 <span aria-hidden="true">↗</span></a></div>
+          <div class="method-note"><span class="method-note-mark" aria-hidden="true">✳</span><p><strong>相同负载，是比较的前提。</strong> 本批结果是不同服务配置的端到端表现；并行策略、显存预算和 Graph 覆盖会影响排序。</p><a href="https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md" target="_blank" rel="noopener noreferrer">数据与证据 <span aria-hidden="true">↗</span></a></div>
         </div>
       </section>
     </main>

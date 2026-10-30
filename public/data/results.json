@@ -1,5 +1,329 @@
 {
-  "publishedAt": null,
-  "workloads": [],
-  "results": []
+  "publishedAt": "2026-10-30T12:59:45Z",
+  "workloads": [
+    {
+      "id": "short-1028-128",
+      "label": "短输入",
+      "hardware": "2 台主机 · 8 × RTX PRO 6000 Blackwell 96 GB",
+      "inputTokens": 1028,
+      "outputTokens": 128
+    }
+  ],
+  "results": [
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "DeepInfer",
+      "release": "DP8 / EP8 · 容量 256",
+      "concurrency": 1,
+      "measuredAt": "2026-10-24T05:26:05.384Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#deepinfer",
+      "metrics": {
+        "outputTps": 69.27950122456147,
+        "ttftSeconds": 0.3818174884384007,
+        "requestDecodeTps": 87.09974539540794,
+        "e2eSeconds": 1.8471663498135058
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "DeepInfer",
+      "release": "DP8 / EP8 · 容量 256",
+      "concurrency": 8,
+      "measuredAt": "2026-10-24T05:26:17.208Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#deepinfer",
+      "metrics": {
+        "outputTps": 352.4924290012689,
+        "ttftSeconds": 0.5788123290005842,
+        "requestDecodeTps": 57.204660767729735,
+        "e2eSeconds": 2.8103466238126202
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "DeepInfer",
+      "release": "DP8 / EP8 · 容量 256",
+      "concurrency": 16,
+      "measuredAt": "2026-10-24T05:26:32.105Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#deepinfer",
+      "metrics": {
+        "outputTps": 516.4540756328256,
+        "ttftSeconds": 0.8120113875620518,
+        "requestDecodeTps": 44.13954690865559,
+        "e2eSeconds": 3.70979863293735
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "DeepInfer",
+      "release": "DP8 / EP8 · 容量 256",
+      "concurrency": 32,
+      "measuredAt": "2026-10-24T05:26:52.369Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#deepinfer",
+      "metrics": {
+        "outputTps": 713.4327353519229,
+        "ttftSeconds": 1.9384263125309644,
+        "requestDecodeTps": 37.88055836611406,
+        "e2eSeconds": 5.374592396046693
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "DeepInfer",
+      "release": "DP8 / EP8 · 容量 256",
+      "concurrency": 64,
+      "measuredAt": "2026-10-24T05:27:16.054Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#deepinfer",
+      "metrics": {
+        "outputTps": 1176.656891783985,
+        "ttftSeconds": 2.4267916454217584,
+        "requestDecodeTps": 31.83063013070199,
+        "e2eSeconds": 6.531058352953124
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "DeepInfer",
+      "release": "DP8 / EP8 · 容量 256",
+      "concurrency": 128,
+      "measuredAt": "2026-10-24T05:27:53.129Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#deepinfer",
+      "metrics": {
+        "outputTps": 1476.8165069710308,
+        "ttftSeconds": 3.8219463868908004,
+        "requestDecodeTps": 19.675283851379827,
+        "e2eSeconds": 10.604164402715014
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "DeepInfer",
+      "release": "DP8 / EP8 · 容量 256",
+      "concurrency": 256,
+      "measuredAt": "2026-10-24T05:28:54.363Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#deepinfer",
+      "metrics": {
+        "outputTps": 1712.3591962572712,
+        "ttftSeconds": 6.382328015316418,
+        "requestDecodeTps": 11.276212209912716,
+        "e2eSeconds": 18.413425489398485
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "SGLang",
+      "release": "TP8 / EP8 · Graph32 · 容量 256",
+      "concurrency": 1,
+      "measuredAt": "2026-10-24T06:59:12.289Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#sglang",
+      "metrics": {
+        "outputTps": 108.82130603304233,
+        "ttftSeconds": 0.21559697393695387,
+        "requestDecodeTps": 132.64050689764582,
+        "e2eSeconds": 1.1761901696875157
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "SGLang",
+      "release": "TP8 / EP8 · Graph32 · 容量 256",
+      "concurrency": 8,
+      "measuredAt": "2026-10-24T06:59:23.096Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#sglang",
+      "metrics": {
+        "outputTps": 397.14898504155383,
+        "ttftSeconds": 0.978180208437152,
+        "requestDecodeTps": 84.52147679335073,
+        "e2eSeconds": 2.4845732017499813
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "SGLang",
+      "release": "TP8 / EP8 · Graph32 · 容量 256",
+      "concurrency": 16,
+      "measuredAt": "2026-10-24T06:59:37.919Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#sglang",
+      "metrics": {
+        "outputTps": 522.7069605473614,
+        "ttftSeconds": 1.5195112247503175,
+        "requestDecodeTps": 57.18230834602545,
+        "e2eSeconds": 3.760213507312642
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "SGLang",
+      "release": "TP8 / EP8 · Graph32 · 容量 256",
+      "concurrency": 32,
+      "measuredAt": "2026-10-24T07:00:01.146Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#sglang",
+      "metrics": {
+        "outputTps": 609.8111227024658,
+        "ttftSeconds": 2.3637483242499684,
+        "requestDecodeTps": 32.089824815346354,
+        "e2eSeconds": 6.429801532546718
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "SGLang",
+      "release": "TP8 / EP8 · Graph32 · 容量 256",
+      "concurrency": 64,
+      "measuredAt": "2026-10-24T07:00:46.671Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#sglang",
+      "metrics": {
+        "outputTps": 576.3740347273442,
+        "ttftSeconds": 3.846484140077962,
+        "requestDecodeTps": 13.739376921137767,
+        "e2eSeconds": 13.455711105765431
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "SGLang",
+      "release": "TP8 / EP8 · Graph32 · 容量 256",
+      "concurrency": 128,
+      "measuredAt": "2026-10-24T07:02:06.160Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#sglang",
+      "metrics": {
+        "outputTps": 664.9545770295499,
+        "ttftSeconds": 6.703715283113311,
+        "requestDecodeTps": 8.123945893043244,
+        "e2eSeconds": 23.241222698445284
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "SGLang",
+      "release": "TP8 / EP8 · Graph32 · 容量 256",
+      "concurrency": 256,
+      "measuredAt": "2026-10-24T06:58:49.061Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#sglang",
+      "metrics": {
+        "outputTps": 652.915823058326,
+        "ttftSeconds": 12.452743981714832,
+        "requestDecodeTps": 3.9317598638548867,
+        "e2eSeconds": 46.45364094468175
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "vLLM",
+      "release": "TP4 / DP2 / EP8 · 容量 256",
+      "concurrency": 1,
+      "measuredAt": "2026-10-24T07:26:27.416Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#vllm",
+      "metrics": {
+        "outputTps": 62.30911319071933,
+        "ttftSeconds": 0.2491044809999039,
+        "requestDecodeTps": 70.53045411401483,
+        "e2eSeconds": 2.054104655500396
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "vLLM",
+      "release": "TP4 / DP2 / EP8 · 容量 256",
+      "concurrency": 8,
+      "measuredAt": "2026-10-24T07:26:40.108Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#vllm",
+      "metrics": {
+        "outputTps": 283.2238227990696,
+        "ttftSeconds": 1.1160730224378312,
+        "requestDecodeTps": 56.61954998222409,
+        "e2eSeconds": 3.4134676278752067
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "vLLM",
+      "release": "TP4 / DP2 / EP8 · 容量 256",
+      "concurrency": 16,
+      "measuredAt": "2026-10-24T07:26:58.233Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#vllm",
+      "metrics": {
+        "outputTps": 377.12872343585224,
+        "ttftSeconds": 1.7025402223127912,
+        "requestDecodeTps": 38.71836398938664,
+        "e2eSeconds": 5.053451414469009
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "vLLM",
+      "release": "TP4 / DP2 / EP8 · 容量 256",
+      "concurrency": 32,
+      "measuredAt": "2026-10-24T07:27:24.190Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#vllm",
+      "metrics": {
+        "outputTps": 519.4016699202651,
+        "ttftSeconds": 3.678261087015642,
+        "requestDecodeTps": 33.00188412884744,
+        "e2eSeconds": 7.587256589499874
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "vLLM",
+      "release": "TP4 / DP2 / EP8 · 容量 256",
+      "concurrency": 64,
+      "measuredAt": "2026-10-24T07:28:02.864Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#vllm",
+      "metrics": {
+        "outputTps": 679.64826417729,
+        "ttftSeconds": 6.739876557179485,
+        "requestDecodeTps": 26.948282039271454,
+        "e2eSeconds": 11.515537296281197
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "vLLM",
+      "release": "TP4 / DP2 / EP8 · 容量 256",
+      "concurrency": 128,
+      "measuredAt": "2026-10-24T07:29:13.214Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#vllm",
+      "metrics": {
+        "outputTps": 727.9975655415856,
+        "ttftSeconds": 13.660333819097659,
+        "requestDecodeTps": 16.809431762128792,
+        "e2eSeconds": 21.30732404915237
+      }
+    },
+    {
+      "workloadId": "short-1028-128",
+      "model": "DeepSeek-V4.1-Flash-1017",
+      "engine": "vLLM",
+      "release": "TP4 / DP2 / EP8 · 容量 256",
+      "concurrency": 256,
+      "measuredAt": "2026-10-24T07:25:50.525Z",
+      "sourceUrl": "https://github.com/NewbieFoxMe/benchmark/blob/main/docs/datasets/2026-10-24-concurrency256.md#vllm",
+      "metrics": {
+        "outputTps": 759.5940542481228,
+        "ttftSeconds": 21.570092162804748,
+        "requestDecodeTps": 7.5839324257096985,
+        "e2eSeconds": 40.48934083058599
+      }
+    }
+  ]
 }
